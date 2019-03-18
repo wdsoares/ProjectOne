@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm-offset-4 col-sm-4" style="margin-top: 150px">
+      <div class="panel panel-default">
+        <div class="panel-heading text-center">
+          <h2 style="color:#ffffff; font-family: Arial, Helvetica, sans-serif;">Entrar</h2>
+        </div>
+          <div class="panel-body">
+            <%= bootstrap_form_for(:user, label_errors: true) do |f| %>
+              <%= f.email_field :email, class: "input-lg", placeholder: "joao@email.com" %>
+              <%= f.password_field :password, label:"Senha", placeholder: "************", class: "input-lg" %>
+              <%= f.submit "Login", class: "btn btn-block btn-lg btn-primary" %>
+            <% end %> <br>
+            <%= link_to "Cadastrar", signup_path, class:"btn btn-block btn-sm btn-light" %>
+            <p id="notice"><%= notice %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
