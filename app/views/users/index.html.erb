@@ -1,9 +1,15 @@
 <nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="/">Olá, <%= current_user.nome %></a>
+  <a class="navbar-brand" href="/users" style="background-color: transparent;font-size: 14px;">Olá, <%= current_user.nome %></a>
   <form class="form-inline">
     <div style="padding-left: 10px;">
-      <a class="btn btn-outline-danger" href="/exit" role="button">
-      Sair
+      <a class="btn btn-outline-success" href="/exit" role="button">
+        Comprar
+      </a>
+      <a class="btn btn-outline-success" href="/exit" role="button">
+        Vender
+      </a>
+      <a class="btn btn-danger" style="color:white;" href="/exit" role="button">
+        Sair
       </a>
     </div>
   </form>

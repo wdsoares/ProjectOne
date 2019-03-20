@@ -9,9 +9,9 @@ class SessionsController < ApplicationController
 
     if @user.present? && @user.authenticate(user_params[:password])
       cookies.permanent.signed[:user_id] = @user.id
-      redirect_to users_path
+      redirect_to home_path
     else
-      flash.now[:notice] = "Usuário ou senha incorreta!"
+      flash.now[:alert] = "Usuário ou senha incorreta!"
       render :new
     end
   end

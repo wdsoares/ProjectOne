@@ -5950,3 +5950,1550 @@ Processing by SignupController#new as HTML
 Completed 200 OK in 502ms (Views: 477.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-03-19 16:03:40 -0300
+  
+Mysql2::Error::ConnectionError (Can't connect to MySQL server on 'localhost' (10061)):
+  
+mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:90:in `connect'
+mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:90:in `initialize'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.6.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.6.2) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.6.2) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.6.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-19 16:04:08 -0300
+  
+Mysql2::Error::ConnectionError (Can't connect to MySQL server on 'localhost' (10061)):
+  
+mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:90:in `connect'
+mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:90:in `initialize'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.6.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.6.2) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.6.2) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.6.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-19 16:06:39 -0300
+  [1m[35m (94.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (14.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (223.0ms)
+Completed 200 OK in 6661ms (Views: 6615.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-03-19 16:07:04 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UcA5VlnSkbcE4CtChO+qKuebMAB2tTDXNbnXMyhm5y5ZvIIgiR2Pmc9IbisaRtLV60bTUHVG0jCxD+Zphjwe0w==", "user"=>{"email"=>"chico@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (57.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'chico@email.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 407ms (Views: 338.0ms | ActiveRecord: 58.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-19 16:07:30 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 370ms (Views: 326.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-19 16:07:53 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 361ms (Views: 338.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2019-03-19 16:08:10 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4vUt7lV54dQR8jGyy/mVKfQWazsZ28EngS8EHxUMYIXqiZaYhbb/+tpadNtVUO3W+MuIaxooI8AFmTVFu1aZeA==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(55) 99999-9999", "endereco"=>"Rua 7 de Setembro, 829", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (21.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' LIMIT 1[0m
+  [1m[35mSQL (21.0ms)[0m  [1m[32mINSERT INTO `users` (`nome`, `email`, `zap`, `created_at`, `updated_at`, `password_digest`, `endereco`) VALUES ('Willian Denner Soares', 'wsoares@inf.ufsm.br', '(55) 99999-9999', '2019-03-19 19:08:10', '2019-03-19 19:08:10', '$2a$10$4p5kVSuf97703pINXxCwa.0vukUbjE77FRbKBUJqDqt1x59oPCDja', 'Rua 7 de Setembro, 829')[0m
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 249ms (ActiveRecord: 139.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-19 16:08:10 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 442ms (Views: 391.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for 127.0.0.1 at 2019-03-19 16:08:32 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-19 16:08:32 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 356ms (Views: 334.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-19 16:15:36 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 467ms (Views: 439.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-19 16:15:42 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 473ms (Views: 445.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 21:59:35 -0300
+  
+Mysql2::Error::ConnectionError (Can't connect to MySQL server on 'localhost' (10061)):
+  
+mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:90:in `connect'
+mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:90:in `initialize'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.6.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.6.2) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.6.2) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.6.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-19 22:00:12 -0300
+  [1m[35m (104.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (14.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (404.0ms)
+Completed 200 OK in 7690ms (Views: 7643.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-03-19 23:11:12 -0300
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.6.2) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.6.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (11.0ms)[0m  [1m[34mSELECT GET_LOCK('7120803551518529670', 0)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateHomes (20190320020242)
+  [1m[35m (294.0ms)[0m  [1m[35mCREATE TABLE `homes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (70.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190320020242')[0m
+  [1m[35m (71.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (69.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (12.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('7120803551518529670')[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2019-03-19 23:14:20 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (240.0ms)
+Completed 200 OK in 13577ms (Views: 13544.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-03-19 23:18:15 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZzVAhOUVtXJZmokogGrSD7/ZhdM5fxGPRusu97O2sjv268da1CgxGmeWR4MWY4SLwmrlZuCjk+ZDPRCdslaNQw==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (17.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 189ms (ActiveRecord: 42.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-19 23:18:15 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 531ms (Views: 481.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2019-03-19 23:19:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/home"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2019-03-19 23:19:48 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 435ms (Views: 410.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:19:50 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 431ms (Views: 398.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:20:26 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 422ms (Views: 401.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:20:35 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 402ms (Views: 381.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:20:56 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 443ms (Views: 418.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:25:36 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 457ms (Views: 434.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:25:47 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 455ms (Views: 430.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:25:54 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 409ms (Views: 386.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:26:20 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 405ms (Views: 384.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:26:36 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 388ms (Views: 365.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:26:47 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 435ms (Views: 412.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:28:12 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 398ms (Views: 376.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:28:24 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 441ms (Views: 418.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:28:33 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 439ms (Views: 415.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:33:23 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 504ms (Views: 475.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:34:19 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 417ms (Views: 391.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:36:42 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 453ms (Views: 432.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:38:11 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 516ms (Views: 486.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:38:35 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 463ms (Views: 441.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:38:49 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 469ms (Views: 447.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:39:21 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 477ms (Views: 452.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:40:19 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 423ms (Views: 400.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:41:15 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 449ms (Views: 428.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:42:50 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 415ms (Views: 390.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:44:12 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 390ms (Views: 369.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:44:30 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 438ms (Views: 416.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:44:45 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 419ms (Views: 398.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:46:17 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 438ms (Views: 412.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:46:57 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 414ms (Views: 390.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:47:21 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 442ms (Views: 419.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:49:12 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 437ms (Views: 415.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:50:11 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6947ms (Views: 6927.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:50:39 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3421ms (Views: 3397.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:51:17 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 473ms (Views: 450.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:53:41 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 466ms (Views: 443.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:53:50 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 461ms (Views: 440.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:54:10 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 640ms (Views: 618.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:54:53 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 416ms (Views: 393.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:55:00 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 419ms (Views: 396.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:56:05 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 419ms (Views: 396.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:56:26 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 406ms (Views: 383.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-19 23:56:46 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 411ms (Views: 388.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:01:37 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 426ms (Views: 404.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:01:56 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 402ms (Views: 381.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:02:08 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 433ms (Views: 410.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:04:08 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 442ms (Views: 420.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:06:00 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 413ms (Views: 391.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:06:45 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 418ms (Views: 394.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:07:04 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 418ms (Views: 396.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:07:34 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 405ms (Views: 383.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:10:29 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 444ms (Views: 421.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:13:12 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 421ms (Views: 398.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:13:37 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 388ms (Views: 365.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:13:45 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 416ms (Views: 392.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:27:34 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2939ms (Views: 2904.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:28:00 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 464ms (Views: 442.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:28:35 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 414ms (Views: 391.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:28:52 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 482ms (Views: 447.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:30:06 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 420ms (Views: 397.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:30:14 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 403ms (Views: 379.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:30:21 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 445ms (Views: 422.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 00:37:28 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3130ms (Views: 3107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-20 00:38:36 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 417ms (Views: 389.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-20 00:39:50 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 575ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "    opacity": expected "}", was ": 0.2;"
+        on line 29 of app/assets/stylesheets/application.scss
+>>     opacity: 0.2;
+
+   ----^
+):
+    4:     <title>ProjetoOne</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.scss:29
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__367932767_119224032'
+Started GET "/signup" for 127.0.0.1 at 2019-03-20 00:41:00 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2791ms (Views: 2770.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-20 00:42:48 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2755ms (Views: 2735.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-20 00:43:10 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 2766ms (Views: 2742.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-20 00:44:07 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 440ms (Views: 414.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-20 00:46:29 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2665ms (Views: 2642.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-20 00:47:26 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2772ms (Views: 2750.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-20 00:48:27 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 3580ms (Views: 3557.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:49:35 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 2856ms (Views: 2836.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-03-20 00:49:43 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0clk7UhHLmqsvmMhw/yc4ln6WvyZu/GokMxUkIS6IYdAF+MzeXqqApKyrYpV9cpmJEk6SUBnc8GVGmr6hVoe/w==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 102ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 00:49:44 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 465ms (Views: 435.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/exit" for 127.0.0.1 at 2019-03-20 00:49:49 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:49:49 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 394ms (Views: 373.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:50:32 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 2826ms (Views: 2805.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-03-20 00:50:39 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Khx52xCxfyQ8uxDrDk844tK9TyEAtEFx/l0YYS+2hxG7wv4FIYz7TAK33kCYRm5mrw4vlNlowxj7iyYLLla4aQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 87ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 00:50:39 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 409ms (Views: 385.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 00:50:41 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 412ms (Views: 390.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 00:50:50 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 436ms (Views: 405.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 00:51:38 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2715ms (Views: 2689.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/exit" for 127.0.0.1 at 2019-03-20 00:53:28 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:53:28 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 2781ms (Views: 2760.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:53:31 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 417ms (Views: 386.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:53:46 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 427ms (Views: 404.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:53:52 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 459ms (Views: 434.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:54:11 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 410ms (Views: 388.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:54:35 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 408ms (Views: 387.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:54:47 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 418ms (Views: 395.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:54:55 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 442ms (Views: 415.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:55:40 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 433ms (Views: 402.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:55:48 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 427ms (Views: 406.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 00:58:22 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 2678ms (Views: 2655.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-03-20 00:58:30 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3JlLJQFG1q7EcZHd+G6U+TD5kCe9gL7xOXwj5IN6m7VNR8z7MHtSxvp9X3ZuZ8J9TUrwkmRcPJg8qh2OgpqkzQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 82ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 00:58:30 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 429ms (Views: 407.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:00:07 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 399ms (Views: 377.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:00:56 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2810ms (Views: 2786.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:01:13 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 2726ms (Views: 2703.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:01:21 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 479ms (Views: 455.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:02:33 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 2713ms (Views: 2688.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:03:26 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2841ms (Views: 2819.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:05:16 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2727ms (Views: 2700.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:05:37 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2703ms (Views: 2676.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:06:25 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2742ms (Views: 2720.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:07:37 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 429ms (Views: 403.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:09:19 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2780ms (Views: 2756.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:09:48 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 2755ms (Views: 2731.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:10:07 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2848ms (Views: 2822.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:11:23 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2792ms (Views: 2765.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:11:40 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2736ms (Views: 2713.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:12:33 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2917ms (Views: 2895.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:12:44 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 2760ms (Views: 2737.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:12:56 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2764ms (Views: 2738.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:13:34 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2785ms (Views: 2762.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:13:44 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2725ms (Views: 2702.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:14:30 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 448ms (Views: 425.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:14:42 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 440ms (Views: 416.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:14:48 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 438ms (Views: 414.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:16:46 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 414ms (Views: 391.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:17:00 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 431ms (Views: 410.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:17:17 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 438ms (Views: 413.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-20 01:17:30 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 391ms (Views: 369.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/exit" for 127.0.0.1 at 2019-03-20 01:21:28 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 01:21:28 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 424ms (Views: 406.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 13:31:51 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (247.0ms)
+Completed 200 OK in 2850ms (Views: 2823.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 13:36:44 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 361ms (Views: 340.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-20 13:36:50 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 399ms (Views: 370.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-03-20 13:45:18 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wb6jjbkDcWREcixyMZ0C/5f6pLcHV69j18VWQBMoNGYSqpedaCA+JZu3nntCvWJPOLHt6wq8uMtQRaMCFh8bDg==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 118ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 13:45:28 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 408ms (Views: 376.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 13:46:25 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 440ms (Views: 418.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 13:47:40 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  Rendered homes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 423ms (Views: 401.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 13:49:25 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (4.0ms)
+  Rendered homes/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 423ms (Views: 398.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/exit" for 127.0.0.1 at 2019-03-20 13:54:24 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 13:54:24 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 429ms (Views: 407.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 13:55:27 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 408ms (Views: 387.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 13:57:15 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (13.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (62.0ms)
+  Rendered homes/new.html.erb within layouts/application (82.0ms)
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 18.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `nome' for nil:NilClass):
+    1: <nav class="navbar navbar-light bg-light">
+    2:   <a class="navbar-brand" href="/home" style="background-color: transparent;font-size: 14px;">Olá, <%= current_user.nome %></a>
+    3:   <form class="form-inline">
+    4:     <div style="padding-left: 10px;">
+    5:       <a class="btn btn-outline-success" href="/exit" role="button">
+  
+app/views/navbar/_navbar.html.erb:2:in `_app_views_navbar__navbar_html_erb___249846705_78924576'
+app/views/homes/new.html.erb:1:in `_app_views_homes_new_html_erb__918963703_79040196'
+Started GET "/users" for 127.0.0.1 at 2019-03-20 13:58:19 -0300
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 13:58:19 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 421ms (Views: 395.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 13:58:24 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (26.0ms)
+  Rendered homes/new.html.erb within layouts/application (47.0ms)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `nome' for nil:NilClass):
+    1: <nav class="navbar navbar-light bg-light">
+    2:   <a class="navbar-brand" href="/home" style="background-color: transparent;font-size: 14px;">Olá, <%= current_user.nome %></a>
+    3:   <form class="form-inline">
+    4:     <div style="padding-left: 10px;">
+    5:       <a class="btn btn-outline-success" href="/exit" role="button">
+  
+app/views/navbar/_navbar.html.erb:2:in `_app_views_navbar__navbar_html_erb___249846705_101753712'
+app/views/homes/new.html.erb:1:in `_app_views_homes_new_html_erb__918963703_101822964'
+Started GET "/home" for 127.0.0.1 at 2019-03-20 13:58:49 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (31.0ms)
+  Rendered homes/new.html.erb within layouts/application (54.0ms)
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 5.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `nome' for nil:NilClass):
+    1: <nav class="navbar navbar-light bg-light">
+    2:   <a class="navbar-brand" href="/home" style="background-color: transparent;font-size: 14px;">Olá, <%= current_user.nome %></a>
+    3:   <form class="form-inline">
+    4:     <div style="padding-left: 10px;">
+    5:       <a class="btn btn-outline-success" href="/exit" role="button">
+  
+app/views/navbar/_navbar.html.erb:2:in `_app_views_navbar__navbar_html_erb___249846705_108825300'
+app/views/homes/new.html.erb:1:in `_app_views_homes_new_html_erb__918963703_108855876'
+Started GET "/home" for 127.0.0.1 at 2019-03-20 13:59:39 -0300
+Processing by HomesController#new as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 13:59:40 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 466ms (Views: 437.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-03-20 14:00:05 -0300
+Processing by HomesController#new as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-03-20 14:00:05 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 415ms (Views: 392.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-03-20 14:00:10 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xKokJKT0nq2n4OHGUuBBgp+gvXvzLPhz9b9/Y2O54OgXvhA0ddfR7HglU88hwCEyMOv0J/7H79tyP4ohZo7PgA==", "user"=>{"email"=>"chico@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'chico@email.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 379ms (Views: 369.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:02:26 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 417ms (Views: 392.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-03-20 14:02:30 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rehq3GZN1zJ70uz1gI2aM/awxFB/zblaB6mLjOHxsXqW/F7Mt26Yc6QXXvzzrfqDWfuNDHImrvKAKX7O5MaeEg==", "user"=>{"email"=>"chico@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'chico@email.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 375ms (Views: 365.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:02:55 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 403ms (Views: 380.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-03-20 14:02:58 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZXjMEENH2w4BzdLbCMxA8w7J3SwQAAHkjgo96Oidw9G2bPgAkmSUT94IYNJ77CBDoYKUcB3rFkwJisiq7arsuQ==", "user"=>{"email"=>"chico@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'chico@email.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 382ms (Views: 378.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:03:09 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 399ms (Views: 378.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-03-20 14:03:15 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"782UX7Hfwg5G/lagyPYd4bRTi9LpNJJ2bzs5k/tLpf082aBPYPyNT5k75Km71n1RGxjCjuTfhd7ou8zR/nyKlQ==", "user"=>{"email"=>"chico@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'chico@email.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 379ms (Views: 375.7ms | ActiveRecord: 0.0ms)
+
+

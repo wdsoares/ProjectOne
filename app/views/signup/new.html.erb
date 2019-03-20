@@ -7,7 +7,7 @@
         </div>
         <div class="panel-body">
           <%= bootstrap_form_for :user do |f| %>
-            <%= f.text_field :nome, class: "input-lg", label: "Nome", :required => true, placeholder: "João do Pulo" %>
+            <%= f.text_field :nome,class: "input-lg", label: "Nome",:required => true, placeholder: "João do Pulo" %>
             <%= f.email_field :email, class: "input-lg", :required => true, placeholder: "joao@email.com" %>
             <%= f.text_field :zap, class: "input-lg", placeholder: "(00) 99999-9999", id: "zap",:required => true %>
             <%= f.text_field :endereco, class:"input-lg", :required => true, placeholder: "Rua Barão do Rio Branco, 000" %>
