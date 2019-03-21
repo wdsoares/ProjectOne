@@ -53,3 +53,4 @@ gem "bootstrap_form", ">= 4.2.0"
 gem 'jquery-rails'
 gem 'bcrypt'
 gem 'jquery-inputmask-rails'
+gem 'glyphicons-rails'
