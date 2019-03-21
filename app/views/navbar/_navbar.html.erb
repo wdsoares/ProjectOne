@@ -1,14 +1,14 @@
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="/home" style="background-color: transparent;font-size: 14px;">Olá, <%= current_user.nome %></a>
+<nav class="navbar">
+  <a class="navbar-brand" href="/home" style="color: white; background-color: transparent;font-size: 14px;">Olá, <%= current_user.nome %></a>
   <form class="form-inline">
     <div style="padding-left: 10px;">
-      <a class="btn btn-outline-success" href="/exit" role="button">
+      <a class="btn btn-danger3" href="/exit" role="button">
         Comprar
       </a>
-      <a class="btn btn-outline-success" href="/exit" role="button">
+      <a class="btn btn-danger3" href="/exit" role="button">
         Vender
       </a>
-      <a class="btn btn-danger" style="color:white;" href="/exit" role="button">
+      <a class="btn btn-danger-exit" style="color:white;" href="/exit" role="button">
         Sair
       </a>
     </div>

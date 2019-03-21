@@ -3,20 +3,22 @@
 <div class="container">
 	<div class="row justify-content-center">
 		<div class="col-xs-12">
-			<h4 class="text-center" style="padding: 20px">
+			<h4 class="text-center" style="color: white; padding: 20px; font-family: Harabara Mais, Helvetica, sans-serif;">
 				Meu pau que te levante
 			</h4>
-			<div class="row justify-content-center" style="margin-top: 150px">
-				<div class="col-xs-12">
-				    <%= link_to "Vender/Emprestar", signup_path, class:"btn btn-md btn-outline-success active" %>
-                </div>  
+			<div class="panel panel-default" style="margin-top: 150px;">
+				<div class="row justify-content-center">
+					<div class="col-xs-12" style="margin-top: 20px;">
+						<%= link_to "Vender/Emprestar", signup_path, style:"width: 240px;", class:"btn btn-md btn-danger2 active" %>
+					</div>  
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-xs-12">
+						<%= link_to "Comprar/Solicitar empréstimo", signup_path, style:"margin-bottom: 20px; width: 240px;", class:"btn btn-md btn-danger2 active" %>
+					</div>
+				</div>
 			</div>
-            <br>
-            <div class="row justify-content-center">
-                <div class="col-xs-12">
-					<%= link_to "Comprar/Solicitar empréstimo", signup_path, class:"btn btn-md btn-outline-success active" %>
-                </div>
-            </div>
 		</div>
 	</div>
 </div>
