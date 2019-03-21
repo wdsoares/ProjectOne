@@ -9,7 +9,7 @@
             <%= bootstrap_form_for(:user, label_errors: true) do |f| %>
               <%= f.email_field :email, class: "input-lg", label_class:"white-text",placeholder: "joao@email.com" %>
               <%= f.password_field :password, label:"Senha", label_class:"white-text", placeholder: "************", class: "input-lg" %>
-              <%= f.submit "Login", class: "btn btn-block btn-lg btn-primary" %>
+              <%= f.submit "Login", class: "btn btn-block btn-lg btn-danger2" %>
             <% end %><br>
             <%= link_to "Cadastrar", signup_path, class:"btn btn-block btn-sm btn-light" %><br>
             <p id="alert" style="color: white;"><%= alert %></p>

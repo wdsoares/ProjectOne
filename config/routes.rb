@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "users" => "users#index"
   get "exit" => "sessions#destroy"
   get "home" => "homes#new"
-
+  get "vender" => "produtos#new"
+  post "vender" => "produtos#create"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

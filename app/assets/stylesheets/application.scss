@@ -22,20 +22,27 @@
     background-image: image-url('bg2.jpg'); 
     background-size: cover;
   }
-
+  .panel{
+    border-radius: 10px; 
+  }
   .panel-body{
     background-color: rgba(0,0,0,0.2); 
     padding: 10px;
+    border-radius: 10px; 
     }
   .panel-default{
-    background-color: rgba(255, 255, 255, 0.103); 
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 10px; 
     }
+
   .panel-default > .panel-heading{
-    background-color: rgba(255, 255, 255, 0.158); 
+    background-color: rgba(255, 255, 255, 0.096); 
     padding: 10px;
     color: white;
     width: 100% !important;
+    border-radius: 10px; 
     }
+
   .navbar {
     padding: 0;
     background-color: rgba(255, 255, 255, 0.2);
@@ -48,7 +55,9 @@
   }
   @font-face {
     font-family: 'Harabara Mais';
-    src: url('/assets/fonts/harabara_ltf.otf')
+    src: ('/assets/fonts/harabara_ltf.otf');
+    font-weight: normal;
+    font-style: normal;
  }
  
  .btn-danger2 {
