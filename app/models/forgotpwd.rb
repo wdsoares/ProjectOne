@@ -1,0 +1,2 @@
+class Forgotpwd < ApplicationRecord
+end

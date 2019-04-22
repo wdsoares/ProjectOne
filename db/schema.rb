@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190321032348) do
+ActiveRecord::Schema.define(version: 20190422020305) do
 
   create_table "enderecos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "rua"
@@ -24,6 +24,11 @@ ActiveRecord::Schema.define(version: 20190321032348) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "forgotpwds", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "homes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -31,14 +36,15 @@ ActiveRecord::Schema.define(version: 20190321032348) do
 
   create_table "produtos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "titulo", limit: 100
-    t.string "autores", limit: 100
+    t.string "autores", limit: 100, null: false
     t.integer "edicao"
     t.string "data_pub", limit: 15
     t.string "isbn", limit: 15
-    t.string "editora", limit: 60
+    t.string "editora", limit: 40
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
+    t.integer "user_id", null: false
+    t.integer "visivel", null: false
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -49,11 +55,15 @@ ActiveRecord::Schema.define(version: 20190321032348) do
     t.datetime "updated_at", null: false
     t.string "password_digest"
     t.string "endereco"
+    t.integer "user_level", null: false
   end
 
   create_table "vendas", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "idcomprador", null: false
+    t.integer "idvendedor", null: false
+    t.integer "idproduto", null: false
   end
 
 end

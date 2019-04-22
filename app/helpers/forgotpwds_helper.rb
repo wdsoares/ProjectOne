@@ -1,0 +1,2 @@
+module ForgotpwdsHelper
+end

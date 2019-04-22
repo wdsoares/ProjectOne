@@ -1,6 +1,24 @@
+<nav class="navbar">
+  <a class="navbar-brand" href="/admin" style="color: white; background-color: transparent;font-size: 14px;">Painel do administrador</a>
+  <form class="form-inline">
+    <div style="padding-left: 10px;">
+      <a class="btn btn-danger3" href="/exit" role="button">
+        Comprar
+      </a>
+      <a class="btn btn-danger3" href="/vender" role="button">
+        Vender
+      </a>
+      <a class="btn btn-danger-exit" style="color:white;" href="/exit" role="button">
+        Sair
+      </a>
+    </div>
+  </form>
+</nav>
+
+
 <p id="notice"><%= notice %></p>
 
-<h1>Homes</h1>
+<h1 style="color:white;">Em construção</h1>
 
 <table>
   <thead>
@@ -10,16 +28,9 @@
   </thead>
 
   <tbody>
-    <% @homes.each do |home| %>
-      <tr>
-        <td><%= link_to 'Show', home %></td>
-        <td><%= link_to 'Edit', edit_home_path(home) %></td>
-        <td><%= link_to 'Destroy', home, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+    
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New Home', new_home_path %>

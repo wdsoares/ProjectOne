@@ -1,6 +1,16 @@
 class ProdutosController < ApplicationController
   def new
-    # render the login form
+    if (cookies[:user_id].blank?)
+      redirect_to sessions_path
+    end
+  end
+
+  def index
+    if (cookies[:user_id].blank?)
+      redirect_to sessions_path
+    else
+      @produto = Produto.all
+    end
   end
 
   def create

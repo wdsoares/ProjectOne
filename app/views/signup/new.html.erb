@@ -13,7 +13,7 @@
             <%= f.text_field :endereco, class:"input-lg", label_class:"white-text", :required => true, placeholder: "Rua Barão do Rio Branco, 000" %>
             <%= f.password_field :password, label:"Senha", label_class:"white-text", minlength: "6", inline_errors: true ,class: "input-lg", placeholder:"Min. 6 caracteres", :required => true %>
             <%= f.password_field :password_confirmation, label_class:"white-text", minlength: "6", label:"Confirme sua senha", placeholder: "******", class: "input-lg", :required => true %>
-            <%= f.submit "Criar", class: "btn btn-block btn-lg btn-primary" %>
+            <%= f.submit "Criar", class: "btn btn-block btn-lg btn-danger2 active" %>
             <%= link_to "Voltar", sessions_path, class:"btn btn-block btn-sm btn-light" %><br>
             <p id="notice"><%= notice %></p>
           <% end %> 

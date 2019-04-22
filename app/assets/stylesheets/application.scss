@@ -17,7 +17,6 @@
 
  @import 'rails_bootstrap_forms';
  @import 'bootstrap';
- @import 'glyphicons';
 
  body { 
     background-image: image-url('bg2.jpg'); 
@@ -27,8 +26,13 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+  .panel2{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
   .panel-body{
-    background-color: rgba(255, 255, 255, 0.089); 
     padding: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -62,18 +66,57 @@
  }
  
  .btn-danger2 {
-  background-color: rgba(255, 118, 118, 0.411) !important;
+  background: #fc0000;
+  background-image: -webkit-linear-gradient(top, rgba(255, 0, 0, 0.767), rgba(5, 0, 0, 0.158)) !important;
   color: white !important;
   border: 1px solid #fc0000 !important;
  }
+ 
+ .btn-danger2:hover{
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: inset 0px -10px 45px -10px rgba(0,0,0,0.57) !important;
+    -moz-box-shadow: inset 0px 5px 40px -10px rgba(0,0,0,0.57) !important;
+    transition: all 0.4s ease 0s;
+ }
+
+ .btn-danger-home {
+  background: #fc0000;
+  background-image: -webkit-linear-gradient(top, rgba(255, 0, 0, 0.767), rgba(5, 0, 0, 0.158)) !important;
+  color: white !important;
+  border: 1px solid #c90505 !important;
+  text-align: center;
+  font-size: 30px;
+ }
+ 
+ .btn-danger-home:hover{
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57) !important;
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57) !important;
+    transition: all 0.4s ease 0s;
+ }
+
  .btn-danger3 {
   background-color: rgba(255, 255, 255, 0.952) !important;
   color: rgb(255, 59, 59) !important;
   border: 1px solid #fc0000 !important;
  }
 
+ .btn-danger3:hover{
+  text-shadow: 0px 0px 6px rgba(255, 255, 255,1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+
  .btn-danger-exit {
   background-color: rgba(29, 15, 15, 0.411) !important;
   color: rgb(255, 255, 255) !important;
   border: 1px solid #fc0000 !important;
  }
+ .btn-danger-exit:hover{
+  background: rgba(255, 0, 0, 0.747) !important;
+  text-shadow: 0px 0px 6px rgb(0, 0, 0);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}

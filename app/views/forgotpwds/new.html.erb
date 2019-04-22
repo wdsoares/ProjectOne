@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-offset-8 col-sm-6" style="margin-top: 100px">
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h2 style="color:#ffffff; font-family: Harabara Mais, Geneva, sans-serif;">Recuperação de senha</h2>
+          </div>
+            <div class="panel-body">
+              <%= bootstrap_form_for(:user, label_errors: true) do |f| %>
+                <%= f.email_field :email, label:"Email", label_as_placeholder: "true", label_class:"white-text", class: "input-lg" %>
+                <%= f.submit "Enviar", class: "btn btn-lg btn-block btn-danger2 active" %>
+                <%= link_to "Voltar", sessions_path, class:"btn btn-block btn-sm btn-light" %>
+              <% end %>
+              <p id="alert" style="color: white;"><%= alert %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

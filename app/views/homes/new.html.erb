@@ -1,21 +1,25 @@
 <%= render "navbar/navbar" %>
-
 <div class="container">
 	<div class="row justify-content-center">
-		<div class="col-xs-12">
+		<div class="col-sm-5 col-xs-auto">
 			<h4 class="text-center" style="color: white; padding: 20px; font-family: Harabara Mais, Helvetica, sans-serif;">
 				Meu pau que te levante
 			</h4>
-			<div class="panel panel-default" style="margin-top: 150px;">
+			<div class="panel2 panel-default" style="margin-top: 100px;">
 				<div class="row justify-content-center">
-					<div class="col-xs-12" style="margin-top: 20px;">
-						<%= link_to "Vender/Emprestar", vender_path, style:"width: 240px;", class:"btn btn-md btn-danger2 active" %>
+					<div class="col-xs-auto">
+						<%= link_to "Vender/Emprestar", vender_path, style:"width: 340px; margin-top: 50px;", class:"btn btn-lg btn-danger-home active" %>
 					</div>  
 				</div>
 				<br>
 				<div class="row justify-content-center">
-					<div class="col-xs-12">
-						<%= link_to "Comprar/Solicitar empréstimo", signup_path, style:"margin-bottom: 20px; width: 240px;", class:"btn btn-md btn-danger2 active" %>
+					<div class="col-xs-auto">
+						<%= link_to "Comprar/Solicitar empréstimo", signup_path, style:"margin-bottom: 25px; width: 340px;", class:"btn btn-lg btn-danger-home active" %>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-xs-auto">
+						<%= link_to "Meus anúncios", anuncios_path, style:"margin-bottom: 50px; width: 340px;", class:"btn btn-lg btn-danger-home active" %>
 					</div>
 				</div>
 			</div>
