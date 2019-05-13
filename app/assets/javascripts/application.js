@@ -21,6 +21,11 @@
 //= require bootstrap
 //= require_tree .
 
-jQuery(function($){
-    $('#zap').inputmask('(99) 9999[9]-9999');
- });
+$(document).on('turbolinks:load', function() {
+
+    jQuery(function($){
+        $('#zap').inputmask('(99) 9999[9]-9999');
+     });
+
+});
+

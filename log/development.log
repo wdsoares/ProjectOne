@@ -21437,3 +21437,786 @@ Completed 200 OK in 572ms (Views: 544.7ms | ActiveRecord: 0.0ms)
   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('7120803551518529670')[0m
   [1m[35m (2.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2019-04-25 11:17:11 -0300
+  [1m[35m (143.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (13.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (247.0ms)
+Started GET "/" for 127.0.0.1 at 2019-04-25 11:17:14 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 7901ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+    4:     <title>ProjetoOne</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___987008474_49127016'
+Completed 200 OK in 13906ms (Views: 13823.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-04-25 11:17:49 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aH1rFypnGelSxa+5Mjadoca4IR2jSRg4vRQGcCLvTuQIEO63+4l4YiWI+T6/0wvC+3T47g8dtqokt5e/gLdh6g==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (66.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 473ms (ActiveRecord: 140.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-04-25 11:17:49 -0300
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 493ms (Views: 377.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for 127.0.0.1 at 2019-04-25 11:17:54 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-04-25 11:17:54 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 405ms (Views: 383.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-08 13:21:34 -0300
+Started GET "/" for 127.0.0.1 at 2019-05-08 13:21:34 -0300
+  [1m[35m (582.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (585.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (13.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (13.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (391.0ms)
+  Rendered sessions/new.html.erb within layouts/application (391.0ms)
+Completed 500 Internal Server Error in 13404ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+    4:     <title>ProjetoOne</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___890024620_54455028'
+Completed 200 OK in 22961ms (Views: 22924.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-08 13:22:29 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 498ms (Views: 476.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-05-08 13:22:40 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fls0UpKf4hzZNZZhYzQmw7QZNoRnVwYJIGdIYUpvK472V2OdVODrHvq5PzneMrd/zczoQFJm8b0z1JoHM7iqog==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (379.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 739ms (ActiveRecord: 445.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-05-08 13:22:41 -0300
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1227ms (Views: 422.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for 127.0.0.1 at 2019-05-08 13:22:49 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-05-08 13:22:50 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 458ms (Views: 435.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-08 13:22:53 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (195.0ms)
+Completed 200 OK in 738ms (Views: 649.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2019-05-08 13:23:15 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m2qu3uui2U/9ObsfxO1w/vEMh/VV9YrjBMSByVWptTTEH9RoI+Fx1S2C2ioSg/3eFxg3m9mtFCQKWpxnphHfw==", "user"=>{"nome"=>"aposdk", "email"=>"aopsd@gmail.com", "zap"=>"12301923", "endereco"=>"oasdm", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (277.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'aopsd@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (465.0ms)[0m  [1m[32mINSERT INTO `users` (`nome`, `email`, `zap`, `created_at`, `updated_at`, `password_digest`, `endereco`, `user_level`) VALUES ('aposdk', 'aopsd@gmail.com', '12301923', '2019-05-08 16:23:16', '2019-05-08 16:23:16', '$2a$10$cWR2bgF8MTd8wf/6qEWQsuH4.CTsYwvAaRYJPPFRopXCLSoNwC8Xi', 'oasdm', 5)[0m
+  [1m[35m (504.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 1550ms (ActiveRecord: 1246.1ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-05-08 13:23:17 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (143.0ms)
+  Rendered homes/new.html.erb within layouts/application (528.0ms)
+Completed 200 OK in 1169ms (Views: 948.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/anuncios" for 127.0.0.1 at 2019-05-08 13:23:31 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (4.0ms)
+  [1m[36mProduto Load (72.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 7 ORDER BY `produtos`.`id` ASC LIMIT 1000[0m
+  Rendered produtos/index.html.erb within layouts/application (617.0ms)
+Completed 200 OK in 1442ms (Views: 461.8ms | ActiveRecord: 592.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-05-08 13:23:39 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 462ms (Views: 438.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for 127.0.0.1 at 2019-05-08 13:23:56 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-05-08 13:23:56 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 405ms (Views: 384.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/forgotpwd" for 127.0.0.1 at 2019-05-08 13:24:57 -0300
+Processing by ForgotpwdsController#new as HTML
+  Rendering forgotpwds/new.html.erb within layouts/application
+  Rendered forgotpwds/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 641ms (Views: 367.8ms | ActiveRecord: 147.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-05-08 13:25:00 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 356ms (Views: 330.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-08 13:25:01 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 366ms (Views: 345.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-05-08 13:25:04 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 355ms (Views: 337.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-13 03:39:42 -0300
+  [1m[35m (553.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/" for 127.0.0.1 at 2019-05-13 03:39:45 -0300
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (75.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (75.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (224.0ms)
+  Rendered sessions/new.html.erb within layouts/application (234.0ms)
+Completed 500 Internal Server Error in 16184ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+    4:     <title>ProjetoOne</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__86153726_56449584'
+Completed 200 OK in 25731ms (Views: 25638.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-13 03:48:29 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 621ms (Views: 594.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 03:57:06 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (89.0ms)
+Completed 200 OK in 557ms (Views: 497.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-05-13 03:57:50 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 401ms (Views: 382.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-05-13 03:57:58 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xfw0G9WfOac3J9CHRPn9WXBQcjN+Q5vNKZ6GsR1ViiHjBpe0EpXlRfkBnYxVBhbqoyZhsNybzi04taNpGCq7RQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (220.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 992ms (Views: 382.1ms | ActiveRecord: 355.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-05-13 03:58:01 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TE5iW0VEXjwnpZeKyjHmf9l6MCb8H15tuQGIUCGL1lCJ2Wj3oCqqj7gQEqtvxpacnBhocAsSiQJ8Y5ankd8DFQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 186ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-05-13 03:58:02 -0300
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 447ms (Views: 387.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for 127.0.0.1 at 2019-05-13 03:58:23 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-05-13 03:58:23 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 386ms (Views: 365.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-05-13 03:58:28 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4UaOd7ZeHONsgeQnAdwk/n9nZXMZAYuec4k6gXuex0VfvC3YcVTAAaKnqSwQI89NrBF28LvZ3n5ioh9ZfuH2IQ==", "user"=>{"email"=>"aopsd@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'aopsd@gmail.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 517ms (Views: 359.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2019-05-13 03:58:42 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UAfnpgXn6y4Pt9z3fVhr7QgNJLy9kZflm7o8948N9Z2VkO0K4IkfnZACWdbYrxsOTW986kqcQIpe2CIAP1kg2A==", "user"=>{"email"=>"nego@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'nego@email.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 395ms (Views: 390.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 03:58:44 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 384ms (Views: 363.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2019-05-13 03:59:18 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"twhbNVn61qWsaix8TzByURO2ypo6nMQLkxFxRfRiZHxG0iUhYpPrKkNK60DIM1jSU5S7rmo0UjzdqXlkOgA7Lw==", "user"=>{"nome"=>"Usuário da Silva", "email"=>"user@email.com", "zap"=>"(00) 00000-0000", "endereco"=>"Rua 1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (34.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (21.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'user@email.com' LIMIT 1[0m
+  [1m[35mSQL (145.0ms)[0m  [1m[32mINSERT INTO `users` (`nome`, `email`, `zap`, `created_at`, `updated_at`, `password_digest`, `endereco`, `user_level`) VALUES ('Usuário da Silva', 'user@email.com', '(00) 00000-0000', '2019-05-13 06:59:18', '2019-05-13 06:59:18', '$2a$10$ndGTzohN0T8vh4TMwVxNPONKyIN7q.DxKBJpSRcf1VyXkwU3HEZPy', 'Rua 1', 5)[0m
+  [1m[35m (113.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 428ms (ActiveRecord: 313.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-05-13 03:59:18 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (13.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (34.0ms)
+  Rendered homes/new.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 515ms (Views: 462.3ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2019-05-13 03:59:27 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 471ms (Views: 451.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for 127.0.0.1 at 2019-05-13 04:16:29 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-05-13 04:16:29 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 479ms (Views: 456.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:16:32 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 404ms (Views: 383.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:16:37 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 463ms (Views: 439.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-05-13 04:21:55 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 14145ms (Views: 14123.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-05-13 04:22:09 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 434ms (Views: 413.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-13 04:22:34 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (104.0ms)
+Completed 200 OK in 5367ms (Views: 5335.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:22:57 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 470ms (Views: 448.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-13 04:23:21 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 579ms (Views: 555.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:23:23 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 441ms (Views: 414.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:23:27 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 487ms (Views: 463.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-13 04:23:35 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 460ms (Views: 438.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:23:37 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 433ms (Views: 413.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-13 04:28:21 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 629ms (Views: 601.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:28:24 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 398ms (Views: 377.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:28:44 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (104.0ms)
+Completed 200 OK in 5030ms (Views: 4998.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:29:18 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 484ms (Views: 460.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-13 04:31:11 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Started GET "/" for 127.0.0.1 at 2019-05-13 04:31:15 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 5400ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'text/css'
+Checked in these paths: 
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/config
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/fonts
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/images
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/javascripts
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/glyphicons-rails-0.1.2/app/assets/fonts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/glyphicons-rails-0.1.2/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/jquery-inputmask-rails-2.5.5/vendor/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap_form-4.2.0/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actioncable-5.1.6.2/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionview-5.1.6.2/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/fonts
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/node_modules
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/popper_js-1.14.5/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap-4.3.1/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap-4.3.1/assets/javascripts):
+    4:     <title>ProjetoOne</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/signup.scss:6
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__338510933_87798324'
+Completed 500 Internal Server Error in 4981ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'text/css'
+Checked in these paths: 
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/config
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/fonts
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/images
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/javascripts
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/glyphicons-rails-0.1.2/app/assets/fonts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/glyphicons-rails-0.1.2/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/jquery-inputmask-rails-2.5.5/vendor/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap_form-4.2.0/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actioncable-5.1.6.2/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionview-5.1.6.2/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/fonts
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/node_modules
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/popper_js-1.14.5/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap-4.3.1/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap-4.3.1/assets/javascripts):
+    4:     <title>ProjetoOne</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/signup.scss:6
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__338510933_112100064'
+Started GET "/" for 127.0.0.1 at 2019-05-13 04:31:56 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 4146ms (Views: 4123.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:32:05 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 434ms (Views: 413.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:32:10 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 456ms (Views: 435.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:32:21 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 3111ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'rails-ujs' with type 'text/css'
+Checked in these paths: 
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/config
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/fonts
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/images
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/javascripts
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/glyphicons-rails-0.1.2/app/assets/fonts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/glyphicons-rails-0.1.2/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/jquery-inputmask-rails-2.5.5/vendor/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap_form-4.2.0/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actioncable-5.1.6.2/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionview-5.1.6.2/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/app/assets/fonts
+  C:/Users/Cacetinho/RubymineProjects/ProjectOne/node_modules
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/popper_js-1.14.5/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap-4.3.1/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap-4.3.1/assets/javascripts):
+    4:     <title>ProjetoOne</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/signup.scss:5
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__338510933_102200064'
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:37:46 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 4161ms (Views: 4140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-05-13 04:37:54 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 431ms (Views: 410.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:37:55 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 458ms (Views: 438.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-05-13 04:38:00 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 454ms (Views: 434.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-13 04:40:40 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 592ms (Views: 564.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:40:43 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (178.0ms)
+Completed 200 OK in 449ms (Views: 427.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-13 04:40:58 -0300
+  [1m[35m (17.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (93.0ms)
+Started GET "/" for 127.0.0.1 at 2019-05-13 04:41:02 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9466ms (Views: 9433.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 20291ms (Views: 20229.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:41:24 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 476ms (Views: 455.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:41:28 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (212.0ms)
+Completed 200 OK in 508ms (Views: 488.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-13 04:41:36 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 485ms (Views: 434.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:41:38 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (184.0ms)
+Completed 200 OK in 507ms (Views: 477.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:43:12 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (101.0ms)
+Completed 200 OK in 4809ms (Views: 4775.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:43:30 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 427ms (Views: 406.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-05-13 04:43:37 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 516ms (Views: 495.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:43:39 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 465ms (Views: 444.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2019-05-13 04:43:41 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 440ms (Views: 418.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-13 04:47:42 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 677ms (Views: 651.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:47:45 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 395ms (Views: 375.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-13 04:48:31 -0300
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (88.0ms)
+Completed 200 OK in 4711ms (Views: 4680.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-05-13 04:48:52 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 449ms (Views: 425.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-13 04:55:01 -0300
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (101.0ms)
+Started GET "/" for ::1 at 2019-05-13 04:55:05 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 26481ms (Views: 26443.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 37414ms (Views: 37351.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-13 04:55:47 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 404ms (Views: 383.4ms | ActiveRecord: 0.0ms)
+
+
