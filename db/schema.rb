@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190422020305) do
+ActiveRecord::Schema.define(version: 20190521184223) do
 
   create_table "enderecos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "rua"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20190422020305) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "produtos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "produtos", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "titulo", limit: 100
     t.string "autores", limit: 100, null: false
     t.integer "edicao"
@@ -47,15 +47,15 @@ ActiveRecord::Schema.define(version: 20190422020305) do
     t.integer "visivel", null: false
   end
 
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "users", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "nome"
     t.string "email"
     t.string "zap"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
-    t.string "endereco"
     t.integer "user_level", null: false
+    t.integer "enderecoID"
   end
 
   create_table "vendas", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -64,6 +64,12 @@ ActiveRecord::Schema.define(version: 20190422020305) do
     t.integer "idcomprador", null: false
     t.integer "idvendedor", null: false
     t.integer "idproduto", null: false
+    t.index ["idcomprador"], name: "idcomprador_idx"
+    t.index ["idproduto"], name: "idproduto_idx"
+    t.index ["idvendedor"], name: "idvendedor_idx"
   end
 
+  add_foreign_key "vendas", "produtos", column: "idproduto", name: "idproduto"
+  add_foreign_key "vendas", "users", column: "idcomprador", name: "idcomprador"
+  add_foreign_key "vendas", "users", column: "idvendedor", name: "idvendedor"
 end

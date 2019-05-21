@@ -8,7 +8,7 @@ class SignupController < ApplicationController
 
     if @user.save
       cookies.signed[:user_id] = @user.id
-      redirect_to home_path
+      redirect_to endereco_path(:id_user => @user.id)
     else
       flash.now[:notice] = "Email já cadastrado ou senha inválida!"
       render :new

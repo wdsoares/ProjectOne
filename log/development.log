@@ -22220,3 +22220,3056 @@ Processing by SignupController#new as HTML
 Completed 200 OK in 404ms (Views: 383.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-05-13 05:03:05 -0300
+  [1m[35m (72.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (140.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (97.0ms)
+Started GET "/" for ::1 at 2019-05-13 05:03:16 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27101ms (Views: 26898.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 29756ms (Views: 29724.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-13 05:03:51 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 419ms (Views: 378.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-13 05:03:54 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 401ms (Views: 388.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-13 05:03:58 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UCKzDqeZnXrVo0chjT/QvBCehzvKtR8Y3iBDIDaRLSbu2BChYJNBmBuFCiqcwDsPw+iUuGhtSvjPC2b4M+4cQg==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 197ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-05-13 05:03:58 -0300
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 398ms (Views: 367.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-13 05:04:00 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-13 05:04:00 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 361ms (Views: 348.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-21 14:37:56 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (252.0ms)
+Completed 200 OK in 16650ms (Views: 16599.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:39:17 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9gg1ZMF6moNvxHWFONCGMklxzWyJYGrZIOF7pSFnaMrU0p9TCr6bLc2y0rAGUglQ7xkRK4eojKP1qAHauAoFKg==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 677ms (Views: 325.4ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:39:20 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WUAjAYaI9xvdIJ/M0UZWHCA6Wu98SEoPvpfpGaNgZ/F7mok2TUz2tX9WOPnvxNl+hlKGqHKArHVr3pNmOg0KEQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 162ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-05-21 14:39:20 -0300
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 425ms (Views: 383.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 14:39:23 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 14:39:23 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 345ms (Views: 333.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:39:28 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/8i8nOCr9Nb2hhXj6GjU4n6qd0/V8KYsrVns16pTELaQpd75DBcq8UdzCaJqessM4+XC6Fc0K4QG/gZOBIfxzg==", "user"=>{"email"=>"aopsd@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'aopsd@gmail.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 483ms (Views: 320.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:39:33 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z7Kqm4ZU0OM4zxFCcCiQm69sVcdwu4mwmcbCsoD2Nq3taACsTZDRTZq5tndOqh/5CQSJgH5zb8pMj7jNGZtbTQ==", "user"=>{"email"=>"nego@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'nego@email.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 371ms (Views: 365.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:40:02 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DSWhCB69Tv5a7JSZc4e9jOaC61vlutH4b+nDxisxRmIv/ws/1XlPUPiaM6xNBTLuQOo3HOtyN4K6oLm5slwrgg==", "user"=>{"email"=>"chica@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'chica@email.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 494ms (Views: 336.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:40:09 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nSLLpg9D3+v1Aagk8uUeSmfJRWRG2Q5LZvZi84FYNRe/+GGRxIfeRVd3DxHMZ5EowaGZI0gR6DGzvxiMGDVY9w==", "user"=>{"email"=>"chica@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'chica@email.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 480ms (Views: 323.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:40:16 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iMVNKyp8qVP6AIJmdFMa+PZ9CIKtIepB7B7KLYbl6DuqH+cc4bio/Vh2JVNK0ZWaUBXUxaPpDDs5V7BSH4iF2w==", "user"=>{"email"=>"user@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'user@email.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 471ms (Views: 312.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-21 14:40:28 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 417ms (Views: 405.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 14:40:45 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 463ms (Views: 434.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 14:40:59 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Erp0sjT5kQO4gvGXjeGcLDHTpGZTSvVAtrjt/nCTMymlF8j7tIV89Fb3+mwxpQt2D3AuWMZQukYVqhhMXoDrEA==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(11) 11111-1111", "endereco"=>"Rua 7 de Setembro, 829", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `users` (`nome`, `email`, `zap`, `created_at`, `updated_at`, `password_digest`, `endereco`, `user_level`) VALUES ('Willian Denner Soares', 'wsoares@inf.ufsm.br', '(11) 11111-1111', '2019-05-21 17:40:59', '2019-05-21 17:40:59', '$2a$10$NjfOH9/DS62NFGGHujPAfu0VOKOX/4aufguJsDWadEcDfVDq663sq', 'Rua 7 de Setembro, 829', 5)[0m
+  [1m[35m (63.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 177ms (ActiveRecord: 66.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 14:40:59 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (17.0ms)
+  Rendered homes/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 389ms (Views: 357.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vender" for ::1 at 2019-05-21 14:41:02 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 371ms (Views: 333.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 14:41:06 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 346ms (Views: 335.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 14:41:07 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 329ms (Views: 318.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 14:41:09 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 324ms (Views: 314.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-21 14:41:16 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 345ms (Views: 333.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:41:19 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SlhQlZrRoPsVMXvr73mvrAodaP1BX4aKn7bQs6jrWAxogvqiURWhVbdH3N7R+yDOrHW0uk+XYPBK/6rMMYY17A==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 484ms (Views: 323.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:41:23 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qkgi2YE9+4qA9F1NoVhdmvHDev++8/uSCvL3nhO1xtSIkojuSvn6JCKC+nif2tL4V6umuLA7Hejfu43hitirNA==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 497ms (Views: 333.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-21 14:44:14 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 412ms (Views: 402.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:44:21 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"906losR1iaf+ROMau71g+d1OP3XOREZgvvTOVGF4YDvVlA+VD7GICVwyRC+FP++beybjMsCMoBprvbQr+BUN2w==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 584ms (Views: 407.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:44:42 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cApl5esVl599o0s7yToYZS8QLpCxSYJEiJNwMoo2SEJS0M/SINGWMd/V7A73uJcHiXjy17+BZD5d2gpNE1slog==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.7) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.7) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.7) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/" for ::1 at 2019-05-21 14:44:53 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cApl5esVl599o0s7yToYZS8QLpCxSYJEiJNwMoo2SEJS0M/SINGWMd/V7A73uJcHiXjy17+BZD5d2gpNE1slog==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.7) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.7) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.7) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-05-21 14:45:17 -0300
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 1329ms (Views: 1308.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:45:47 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ho7m5eA2u9Tk4HU0YwKfAMEHgI5am3+68HmsNDSlBeF2+xeqPJF4KeZRzMTYv75SWuBUjKDAUiYd3MIfzbLaFg==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 608ms (Views: 400.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/forgotpwd" for ::1 at 2019-05-21 14:48:38 -0300
+Processing by ForgotpwdsController#new as HTML
+  Rendering forgotpwds/new.html.erb within layouts/application
+  Rendered forgotpwds/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 379ms (Views: 347.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 14:48:40 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 452ms (Views: 438.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:48:44 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RdJst3o/bbfTCnatJZ713NSSluAEBuT9dzjwfFaskOZHBrDoGT/APAK8WLyMaFxzid1S3YE9lW59Oqz7g7Sl+g==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 519ms (Views: 351.2ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:50:55 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"slGPy1GT/KWimEPA+2kOtnKyF42ArOcMaZuBvrqI7MZCJH6EjTQ/WKAp+jBA1C/k6VXDj3r3ypCEPu+VQ58zMQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 509ms (Views: 347.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-21 14:51:35 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (92.0ms)
+Completed 200 OK in 1291ms (Views: 1269.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:51:58 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NmXQOSJsZPTEB5VpUJb2fIKPQu+8isnc+DY8Rf2RJZwgWI5e+5/ijP1dJeUH9RyCTCsQ0SeS+IKpcQTG32M6rw==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 586ms (Views: 381.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-21 14:52:44 -0300
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (86.0ms)
+Completed 200 OK in 1253ms (Views: 1233.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:53:24 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L1vUq77yNJ1IIXVCjXTkszX4J5YoL7xqVcQ6NuebRLs5ZorMZwGy5XF7xc7aFw5N+1x1qLM3jTQEgwK1xWlbiA==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 208ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-05-21 14:53:24 -0300
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 376ms (Views: 364.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 14:53:38 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 14:53:38 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 363ms (Views: 349.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:53:51 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y7hKqXoHI5PziVbSE+OPq9ID98J6qdOeQQSHJXGhxoaJa7oF3y2mhey7ae1lk2pI9d4mib7VErG2EROofjhApA==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 555ms (Views: 378.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:54:06 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CMn9kikUySU71wzjr+wBSPbOJ8ISXC7/WxKwaBrk9QIe9KP18OdPXQKNvG/4j+u2OGp1/IlEH6EKVYjrOBbqMQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 556ms (Views: 389.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-21 14:54:43 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (91.0ms)
+Completed 200 OK in 1339ms (Views: 1318.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:55:03 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZujOYQCjeMEICutBoSGZWaBgR0joPg5rnJHhQmvC2tZw1ZAG2VD+uTFQW832QnOnbsQVdnMmPzXN1tnBSTDF5Q==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 558ms (Views: 356.1ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:56:02 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w32atTznY2uhptTxFCe0IBCDu2Zw1NgdSHn6efE4FzXVQMTS5RTlE5j8ZH1DRF7e3ifpWOvM6UMZPsL608oIBg==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 527ms (Views: 361.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-21 14:56:22 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 408ms (Views: 397.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:56:25 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wji2GHH+HFZrZNUvfaMOE2tH2InXMap2Sbsvf/qylI6zsv53dgw4lv17uEkgimT4JXZSxxQJs2UtzE72+L3CnQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 548ms (Views: 380.3ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:57:23 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rHIF6qauW81qJpo3Gk4nxdpHsRI/4O3sNvtiIEbIENDd+E2FoVx/Dfw591FHZ00ulHY7XPzY9P9SjAOpRMdGww==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 91ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 14:57:23 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (8.0ms)
+  Rendered homes/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 392ms (Views: 380.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 14:58:56 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 14:58:57 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 398ms (Views: 386.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 14:59:00 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vOOxCxj0wtmbEWmCqSs6iLRKRKOTQQ/FGwF0+4U+rKO3xBPA/7aEj5oxCgVRLwhzA43Ttf2bjzsLxhmrULJcAg==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 89ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 14:59:00 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 404ms (Views: 394.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 14:59:02 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 14:59:02 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 406ms (Views: 394.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 14:59:21 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 388ms (Views: 377.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 14:59:43 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xW29Lp0qRnCdcZbW/W2AW9b4vgfR3xkqYxQP1vJIX3B8Tqm/jzaZh35XmUj61qHz4GHXYLoKzUsovAob2//Tw==", "user"=>{"nome"=>"João da Nica", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(11) 11111-1111", "endereco"=>"Rua 7 de Setembro, 829", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 481ms (Views: 384.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 15:00:04 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e6uUi5jZwTakw9tXAmkSf13o4wivZ/TrXw0JNGRc/TYKIdzknyvl9jLctjFfQHiUE9lpRmxf7fg7emi9ZlOrJQ==", "user"=>{"nome"=>"João da Nica", "email"=>"email@email.com", "zap"=>"(11) 11111-1111", "endereco"=>"Rua 7 de Setembro, 829", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'email@email.com' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `users` (`nome`, `email`, `zap`, `created_at`, `updated_at`, `password_digest`, `endereco`, `user_level`) VALUES ('João da Nica', 'email@email.com', '(11) 11111-1111', '2019-05-21 18:00:04', '2019-05-21 18:00:04', '$2a$10$dk.jUYOeD9g9eKPpu4WAjO8b7grEhJnnBPvKzD53GHtGVXIPKB51.', 'Rua 7 de Setembro, 829', 5)[0m
+  [1m[35m (122.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 217ms (ActiveRecord: 124.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 15:00:05 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 10 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (4.0ms)
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 396ms (Views: 384.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 15:00:08 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 15:00:08 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 377ms (Views: 364.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 15:00:15 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KnSUhoSkMdSFw0C0inXZDdho1qG7trvsly25kosNTBshUzZNY+Z3goTjIzNycev2b69Bt9VsOxKH6tTCXoG8ug==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'email@email.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 533ms (Views: 366.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 15:02:59 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WZTS1Kga6zgmj2jz3ooq5g+sl0IjYhtjQ6f1Yg+MEfwoHpq7r+jP+LCQBZWDo0ANQZ0dDOBaAnAn0JTrDYNH7w==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'email@email.com') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 1678ms (Views: 1466.6ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 15:03:38 -0300
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gpUedeSD8LhUs+FNjYouVw5/2iwIvCu/X0Z3vY7rw3rzH1Ya43HUeMKsjCvQo0S8QE5QYsuEMqw7MRY0jOSVaQ==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'email@email.com') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 165ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 15:03:48 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 10 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (10.0ms)
+  Rendered homes/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 544ms (Views: 520.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 15:06:41 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 15:06:41 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 383ms (Views: 372.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 15:06:50 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fa0xj75OXkN8hqIQpKpbdp+E2nFFybxWxIMu/arbJ1AeipNEWQwYFX2mwZdcrmmNKENNZysTPKjUREOtf1fX8Q==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'email@email.com') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 88ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 15:06:50 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 10 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 459ms (Views: 448.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-21 15:37:17 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 630ms (Views: 611.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 15:37:20 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sjRdcNyOqij6zogL47wkZiWUpH8uA5FeqLklSWUq5y7DvhUf23yO6GzR5W2+lU6Na6UuMe07iE3MzkTAZyWxPQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 168ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-05-21 15:37:20 -0300
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 390ms (Views: 377.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 15:37:23 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 15:37:23 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 375ms (Views: 365.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 15:37:27 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dVo890jNZq076w4AQlIpLsn2xv9EkcHz8awq8+sOot5+fZ48r48g+zrLbYe6VhvVfjFR6SpLQQ3ha0ejPoJSfw==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'email@email.com') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 86ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 15:37:27 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 10 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 427ms (Views: 414.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 15:37:38 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 15:37:38 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 391ms (Views: 378.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 15:38:07 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x+WvaVlibbYYnneUP0bTke5VKGyUqzJtf9iU5HFP0jXMwg2iviAr4Bm+FBPHQuFqWZK/evpxspNvH/m0pMMilA==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'email@email.com') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 85ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 15:38:08 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 10 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (4.0ms)
+  Rendered homes/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 419ms (Views: 405.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 15:38:10 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 15:38:10 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 381ms (Views: 369.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (44.0ms)[0m  [1m[34mSELECT GET_LOCK('7120803551518529670', 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddEnderecoIdToUsers (20190521184038)
+  [1m[35m (4384.3ms)[0m  [1m[35mALTER TABLE `users` ADD `enderecoID` int[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190521184038')[0m
+  [1m[35m (92.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (38.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('7120803551518529670')[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('7120803551518529670', 0)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to DelEnderecoFromUsers (20190521184146)
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190521184146')[0m
+  [1m[35m (35.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('7120803551518529670')[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('7120803551518529670', 0)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to RemoveEnderecoFromUsers (20190521184223)
+  [1m[35m (634.0ms)[0m  [1m[35mALTER TABLE `users` DROP `endereco`[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190521184223')[0m
+  [1m[35m (58.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('7120803551518529670')[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2019-05-21 15:56:11 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 1536ms (Views: 1513.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-21 15:56:25 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 405ms (Views: 393.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 15:56:30 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3X603RCwbW3n70XJGty0uvz6idyt+tYTf9x5uLtM3XSs9PyyF0JJrXHwKK9H9d5RsssDkm7CzwAbqxgxuUOLZw==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 210ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-05-21 15:56:30 -0300
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 369ms (Views: 359.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 15:56:32 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 15:56:32 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 403ms (Views: 391.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 15:56:36 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lPK9zwwYLO0tw+GiDQ3AeTSrtoK4z3I8p4jPUuXv77ldGg823Im5bWXbAFwMAX6UxU5zGQ5vTbiWU5tnhtPHw==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'email@email.com') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 89ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 15:56:36 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 10 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (6.0ms)
+  Rendered homes/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 404ms (Views: 394.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 15:56:39 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 15:56:39 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 361ms (Views: 348.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-21 16:09:28 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 570ms (Views: 551.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vender" for ::1 at 2019-05-21 16:09:33 -0300
+Processing by ProdutosController#new as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 16:09:33 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 398ms (Views: 387.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 16:09:38 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T7AR0qfge2CKxHHGWTFiXHdc5KMbnOyjIU3Y06vvf9g+Olm9oBJfoBzbHKAEGAi3OW1u7dik9bBFOrlaqeApyw==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 191ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-05-21 16:09:38 -0300
+  
+SyntaxError (D:/ProjectOne/app/controllers/homes_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/homes_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/sessions" for 127.0.0.1 at 2019-05-21 16:16:01 -0300
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (93.0ms)
+Started GET "/" for 127.0.0.1 at 2019-05-21 16:16:04 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Started GET "/" for ::1 at 2019-05-21 16:16:08 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 19437ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__538212581_84787512'
+Completed 200 OK in 15954ms (Views: 15938.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 38170ms (Views: 38147.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 16:16:45 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Jy9HeV/CVhPOC1+HUfS+1XYwFM1PWUDpbNJY0IEUyqJFvVy4o0tmNknQBhAbrgQG+lKHfYFfBDBxCjqQAsFOQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 1537ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-05-21 16:16:47 -0300
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 369ms (Views: 353.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 16:16:49 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 16:16:49 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 371ms (Views: 359.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 16:16:53 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 484ms (Views: 472.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 16:17:09 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/UqYVy8sYDQ565KwnUpMw0JtrHp5vaIRaeOCBU28fG/vrhQFa2QTS+ZnCo7lVKBF4rfJ3+QS9UDszSISeRqiXQ==", "user"=>{"nome"=>"Chico Limpurra", "email"=>"chico@email.com", "zap"=>"(11) 11111-111_", "endereco"=>"Rua 7 de Setembro, 829", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+No template found for EnderecoController#new, rendering head :no_content
+Completed 204 No Content in 643ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/endereco" for ::1 at 2019-05-21 16:22:12 -0300
+Processing by EnderecoController#new as HTML
+Completed 406 Not Acceptable in 712ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (EnderecoController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT GET_LOCK('7120803551518529670', 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('7120803551518529670')[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2019-05-21 16:24:11 -0300
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (89.0ms)
+Completed 200 OK in 1362ms (Views: 1341.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-21 16:24:26 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 384ms (Views: 372.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/endereco" for ::1 at 2019-05-21 16:24:30 -0300
+Processing by EnderecoController#new as HTML
+Completed 406 Not Acceptable in 631ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (EnderecoController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/endereco" for ::1 at 2019-05-21 16:25:33 -0300
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by EnderecoController#new as HTML
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 4..6)):
+    13:             <%= f.text_field :cep, class:"input-lg", label_class:"white-text", label:"CEP",:required => true, placeholder: "99999-999" %>
+    14:             <%= f.text_field :bairro, class:"input-lg", label_class:"white-text", label:"Bairro",:required => true, placeholder: "Bairro" %>
+    15:             <%= f.text_field :cidade, class:"input-lg", label_class:"white-text", label:"Cidade",:required => true, placeholder: "Santa Maria" %>
+    16:             <%= f.collection_select :UF, class:"input-lg", label_class:"white-text", label:"UF",:required => true, placeholder: "99999-999" %>
+    17:             <%= f.submit "Criar", class: "btn btn-block btn-lg btn-danger2 active" %>
+    18:             <%= link_to "Voltar", sessions_path, class:"btn btn-block btn-sm btn-light" %><br>
+    19:             <p id="notice"><%= notice %></p>
+  
+app/views/endereco/new.html.erb:16:in `block in _app_views_endereco_new_html_erb__831678164_78889332'
+app/views/endereco/new.html.erb:9:in `_app_views_endereco_new_html_erb__831678164_78889332'
+Started GET "/endereco" for ::1 at 2019-05-21 16:26:03 -0300
+Processing by EnderecoController#new as HTML
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 438ms (Views: 427.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 16:26:07 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 380ms (Views: 367.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 16:26:12 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y0uXeC1hYH7aNkKqKdurI1aorvMMk5HeU+fTV7/uAPrAbDWzyiMmKNsWIS3R35nY4W855WJJESBDIL4HamLwWw==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 218ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-05-21 16:26:12 -0300
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 409ms (Views: 397.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 16:26:16 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 16:26:16 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 384ms (Views: 373.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 16:26:52 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 381ms (Views: 368.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 16:27:06 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l2pGJ+WZTYS+4dw9z/9a6n1Uk0d5x8x34o6pG60R8MKFjsp1odE++2FtRAO34bZs3Y724uRomyZnoAkMmbcu8A==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(55) 99661-6378", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 387ms (Views: 377.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 16:27:30 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2g9jL12N7ayNJBMEilf4dmom5qr3fkyQS3n00OPgP4yrhStAWn/JbBs7fmLXfpKdJBds5DRGVYMvDpVZ4e9pnw==", "endereco"=>{"rua"=>"Rua 7 de Setembro", "numero"=>"829", "complemento"=>"Casa", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Criar"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 379ms (Views: 367.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 16:28:20 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 357ms (Views: 346.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 16:32:25 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HuXqE2uTG8trMdpzWdCF0AaFlvABmaWY7T8ZCImQ7cAVwkjYjNFdnWoRufSh1LcrsUIB5m9DJWb9+HRYXBwdYQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 398ms (Views: 385.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/endereco" for ::1 at 2019-05-21 16:32:40 -0300
+Processing by EnderecoController#new as HTML
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 371ms (Views: 360.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 16:32:48 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GE1ru7wXcl+0wSCWV4N6epcz6nRzyfY1u8Ak6umIGIRpxyPUu+VWnyLeTfAKqhCR2QJgOrDx7ybft0Vj64dOlw==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Criar"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 442ms (Views: 431.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 16:35:32 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r3/8iJ+yeiqwU6A+d7h4aej7kEGrrqrAHr+nV7lXtGne9bTnmEBe6iZMzVgqkRKCpsoaD2iWs9N6yMbeu1jieg==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"123", "cidade"=>"Pinhal Grande"}, "commit"=>"Criar"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 382ms (Views: 369.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 16:37:54 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 401ms (Views: 388.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 16:38:02 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KK5x9cXoJwaui8NpS9L0ONYz6XXLFJ3zX0Y1AM/YpKBZJDmawhoDxjiUrg8W+57TmAJjOwgshOA7MVSJzdfysw==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(11) 11111-1111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 398ms (Views: 386.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 16:38:06 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0TMyz52HyUq0CsNaKDVBFTQ8kCqgpmDmPmH7mks1ofyguXqgmnXtiiIVrjx1HCv+eg0aZGOeefVaFpoTSTr37w==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"123123", "cidade"=>"Pinhal Grande"}, "commit"=>"Criar"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 406ms (Views: 394.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 16:40:44 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 455ms (Views: 444.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 16:40:46 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 354ms (Views: 344.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 16:40:52 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rKHJt5YsotUPncxVsoZYR3He85wGxf/sj3YWLpzySWO+RUXl0mTRqtARVGvKmLTB0QSWOZtqqL0KWLY5qFSXUQ==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(11) 11111-1111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 393ms (Views: 382.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 16:40:55 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 376ms (Views: 363.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 16:42:37 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wLaBQKZZ0Q3a83q179Vi8hJCyWt71thkyL2tMWkdDFvLkSOLQRuXW9vTGTIX0VAJpYVefRUMWJrYesBhvJH8+g==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 386ms (Views: 372.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 16:42:39 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 391ms (Views: 378.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 16:42:45 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wLytSqiF8ifxf+eQ8Lfs+6H+US5Kr4xWM5QFe2zu2ubSWCEY7M2BWC7zf66IqQB9ASQ0i9cA2we2uqVsWEgE1A==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(11) 11111-1111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `users` (`nome`, `email`, `zap`, `created_at`, `updated_at`, `password_digest`, `user_level`) VALUES ('Willian Denner Soares', 'wsoares@inf.ufsm.br', '(11) 11111-1111', '2019-05-21 19:42:45', '2019-05-21 19:42:45', '$2a$10$Lo6X0vuYdN1x3lSMcUNAjO1ezdjYQaHJDujFyfWnjR0q1ep2lmdze', 5)[0m
+  [1m[35m (23.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 480ms (ActiveRecord: 27.0ms)
+
+
+  
+NameError (undefined local variable or method `homes_path' for #<SignupController:0xcdded40>
+Did you mean?  home_path):
+  
+app/controllers/signup_controller.rb:11:in `create'
+Started POST "/signup" for ::1 at 2019-05-21 16:43:01 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wLytSqiF8ifxf+eQ8Lfs+6H+US5Kr4xWM5QFe2zu2ubSWCEY7M2BWC7zf66IqQB9ASQ0i9cA2we2uqVsWEgE1A==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(11) 11111-1111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 682ms (Views: 563.7ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 16:43:09 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PJbLejHDCP9Pp+LJWV8vKrDM0ANE3xA6zMQk+97Q/7RNHIMVNjEsP9m4j68EdkXB/v1aTYfnCSmos0Vy3N+ppw==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(11) 11111-1111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 462ms (Views: 372.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 16:43:13 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 396ms (Views: 384.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 16:43:15 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FMMMeylshedlEAVYEnFKFURrOtUZoK8kaIzu8DGcvvrdK76C+f0QZy0I5KYTffT4tY7/Tq8AkKBZV7rFUqCWg==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 87ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 16:43:16 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (7.0ms)
+  Rendered homes/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 412ms (Views: 399.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 16:43:18 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 16:43:18 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 395ms (Views: 382.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 16:44:56 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9FPfniVukTS6AFPGKfxhD8STfrBkxEvgdc7uN/Cy977/dH1VwizXYrsgMEHR+FP0c1Tppgoeyx5lCYNnJT4HHw==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 3.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/sessions_controller.rb:13:in `create'
+Started POST "/" for ::1 at 2019-05-21 16:45:17 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9FPfniVukTS6AFPGKfxhD8STfrBkxEvgdc7uN/Cy977/dH1VwizXYrsgMEHR+FP0c1Tppgoeyx5lCYNnJT4HHw==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 103ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 16:45:17 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 428ms (Views: 416.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 16:45:19 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 16:45:19 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 370ms (Views: 358.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 16:45:34 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qyxAOQIr7dluKqPRVaF8h52P4UpBtpk5v3SV+3UAykigC+Ly5Wmrj28KwFatpU58Kkh2XC9sGcevs/iroIw66Q==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 500 Internal Server Error in 407ms (ActiveRecord: 2.0ms)
+
+
+  
+NameError (undefined local variable or method `null' for #<SessionsController:0xc1586b8>):
+  
+app/controllers/sessions_controller.rb:13:in `create'
+Started POST "/" for ::1 at 2019-05-21 16:46:21 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qyxAOQIr7dluKqPRVaF8h52P4UpBtpk5v3SV+3UAykigC+Ly5Wmrj28KwFatpU58Kkh2XC9sGcevs/iroIw66Q==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 101ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 16:46:21 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 406ms (Views: 394.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 16:46:23 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 16:46:23 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 434ms (Views: 422.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 16:47:01 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zFYVzj8HXXhbJfU+Klh/jVirGHg3qPsn/0Yy1CMb8drHcbcF2EUbLloFlrnSXE1272yPbllye9nvgV+E9pcBew==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco
+Completed 302 Found in 110ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/endereco" for ::1 at 2019-05-21 16:47:01 -0300
+Processing by EnderecoController#new as HTML
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 422ms (Views: 411.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 16:47:07 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 374ms (Views: 363.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 16:47:10 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+kWynLpMcpmqLr2ABZudRNHaCdQ41QCSZToBga78BtvxYhBXXQ40z6sO3gf9n6+/Zh2ewlYPgGx1/WzRe3D2eg==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco
+Completed 302 Found in 85ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/endereco" for ::1 at 2019-05-21 16:47:11 -0300
+Processing by EnderecoController#new as HTML
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 386ms (Views: 374.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 16:47:15 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"glSxdAK3T63Rx0YYQznVmbs1AHZiZtMPSfge11fuxFPz3vkbBUVrbUfYK34eEL9y9QSKOKFeyhwtj39eVeGSQA==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"123123", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', '829', '98150-000', '123123', 'Pinhal Grande', '2019-05-21 19:47:15', '2019-05-21 19:47:15')[0m
+  [1m[35m (77.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 406ms (ActiveRecord: 79.0ms)
+
+
+  
+NameError (undefined local variable or method `homes_path' for #<EnderecoController:0xbf794c8>
+Did you mean?  home_path):
+  
+app/controllers/endereco_controller.rb:10:in `create'
+Started POST "/" for ::1 at 2019-05-21 16:59:22 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eVgVw3Va4jmmT2sl2gb8rn6FnHwWQa/mHV/gyVruoicI0l2scqjG+TBQBkOHL5ZFMLQWMtV5tvV5KIFAWOH0NA==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 395ms (Views: 386.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 16:59:34 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 401ms (Views: 388.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 16:59:40 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c61DydpNA0ZijM+SX70pnE4ZxJgmqXMyP1SlR3r1DBlhSc+bngVwOb0AV6wno8Ua7sOhPbsGJGO6egVQTlPSKw==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(11) 11111-1111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `users` (`nome`, `email`, `zap`, `created_at`, `updated_at`, `password_digest`, `user_level`) VALUES ('Willian Denner Soares', 'wsoares@inf.ufsm.br', '(11) 11111-1111', '2019-05-21 19:59:40', '2019-05-21 19:59:40', '$2a$10$tqkR66GgVwc10.OQDsiz5eliQUb69E5vrN6dhzofS7dC0e2Bq6jla', 5)[0m
+  [1m[35m (33.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 140ms (ActiveRecord: 35.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 16:59:40 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 435ms (Views: 423.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 16:59:43 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 16:59:43 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 391ms (Views: 378.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:00:02 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MT7XHrseU3ZMvMIitFEfXQocbuvMo5fb0wvtUCv/ATw6GXXVXFwVIE2coaVMVS2mvdv5/aJ5FyXDzIAA/nPxnQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id=12
+Completed 302 Found in 90ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/endereco?id=12" for ::1 at 2019-05-21 17:00:02 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id"=>"12"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 395ms (Views: 383.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:00:17 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 389ms (Views: 374.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 17:01:45 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 377ms (Views: 365.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 17:01:50 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RiLx7ShIqruAvY1MDmanKd98IHcmJH8K4pkKsTg5LMlUxn2/bADZxF8xFXJ2eEuvf6ZF0ruLKFtnt6qmDJ/y+w==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(11) 11111-1111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `users` (`nome`, `email`, `zap`, `created_at`, `updated_at`, `password_digest`, `user_level`) VALUES ('Willian Denner Soares', 'wsoares@inf.ufsm.br', '(11) 11111-1111', '2019-05-21 20:01:50', '2019-05-21 20:01:50', '$2a$10$bgCHMKPLspUOMEbmq/8UtO5zgTLfwdiysMctsQ6KqVfRrAZzL.gXa', 5)[0m
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/endereco
+Completed 302 Found in 147ms (ActiveRecord: 35.0ms)
+
+
+Started GET "/endereco" for ::1 at 2019-05-21 17:01:51 -0300
+Processing by EnderecoController#new as HTML
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 400ms (Views: 389.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:01:55 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s1Iwbg85lAUmWkLesfVdquM3/lE3R6SqDA6/jfjZRYjC2HgBCMuwxbBFL7js3DdBrQZ0H/R/vbloed4E+tYTmw==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', '829', '98150-000', 'Limeira', 'Pinhal Grande', '2019-05-21 20:01:55', '2019-05-21 20:01:55')[0m
+  [1m[35m (95.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 121ms (ActiveRecord: 96.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 17:01:55 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 13 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 401ms (Views: 388.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 17:01:57 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:01:58 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 377ms (Views: 364.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:08:21 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"935K46o2CI8r09/Oegt5mWq4+6dfQ5JuFcmp3G9SFGX8WegoTXRO2SrzvEmCD0ti3X9ssTGZEpAFDsSMut7kxA==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id=13
+Completed 302 Found in 108ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/endereco?id=13" for ::1 at 2019-05-21 17:08:21 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id"=>"13"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 393ms (Views: 381.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:08:26 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xTBgXUU13UE4uA56cMSq19sv96QRlkU9qQrRgMIr1Hu0uigyQsf5ga6nYxwt7cA8lR596tKuXC7NfbAJwCSCaA==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"123", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', '829', '98150-000', '123', 'Pinhal Grande', '2019-05-21 20:08:26', '2019-05-21 20:08:26')[0m
+  [1m[35m (132.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 564ms (Views: 403.0ms | ActiveRecord: 135.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:09:13 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xTBgXUU13UE4uA56cMSq19sv96QRlkU9qQrRgMIr1Hu0uigyQsf5ga6nYxwt7cA8lR596tKuXC7NfbAJwCSCaA==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"123", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = 'id') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', '829', '98150-000', '123', 'Pinhal Grande', '2019-05-21 20:09:13', '2019-05-21 20:09:13')[0m
+  [1m[35m (35.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 468ms (Views: 395.1ms | ActiveRecord: 38.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:09:16 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 385ms (Views: 374.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:09:21 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aRTUHcqRnhTiGKFr6qcnq97tFlAby+t5PCe9kaXe85ZiM3bWLdPYQuM4wuwSoxVQaSqBRnURa4cs4NDBcFIDNw==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id=13
+Completed 302 Found in 98ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/endereco?id=13" for ::1 at 2019-05-21 17:09:21 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id"=>"13"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 399ms (Views: 388.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:09:23 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 393ms (Views: 381.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 17:10:48 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 378ms (Views: 367.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 17:10:55 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OOWM8n3VfqbA8qC6iH0iF1VJ+YsqemVTRjeuHbAfLh4qAQCgOZ0N2R9+OITwY86R9ZOcLrfVMgLDGQ4KhLnwLA==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(11) 11111-1111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `users` (`nome`, `email`, `zap`, `created_at`, `updated_at`, `password_digest`, `user_level`) VALUES ('Willian Denner Soares', 'wsoares@inf.ufsm.br', '(11) 11111-1111', '2019-05-21 20:10:55', '2019-05-21 20:10:55', '$2a$10$E3rigK3H6QDGbeZCzX5MrOPQdKBY3DWXaVTeaVGncOjS7eTHZAlWW', 5)[0m
+  [1m[35m (31.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/endereco
+Completed 302 Found in 146ms (ActiveRecord: 36.0ms)
+
+
+Started GET "/endereco" for ::1 at 2019-05-21 17:10:55 -0300
+Processing by EnderecoController#new as HTML
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 402ms (Views: 390.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:11:00 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y+42+ScxPtcogvkpuCUfBVu3FAZKUrQ3pntx3nEMYlG6ZH6WIMMaF76dlE/lDHXuFYaeSIlqrSTCDBBXcwM0Qg==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', '829', '98150-000', 'Limeira', 'Pinhal Grande', '2019-05-21 20:11:00', '2019-05-21 20:11:00')[0m
+  [1m[35m (103.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 543ms (Views: 402.8ms | ActiveRecord: 104.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:12:11 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 379ms (Views: 368.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 17:12:12 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 549ms (Views: 536.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 17:12:21 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pqGK9QDOU9akcKkU/5Yymw6OXL+vlH5joC8GNllqzX60RQanRIYgqXv8MSqHiN4drlQ5GjI7KTIlAaYhbcwTTA==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(55) 99661-6378", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `users` (`nome`, `email`, `zap`, `created_at`, `updated_at`, `password_digest`, `user_level`) VALUES ('Willian Denner Soares', 'wsoares@inf.ufsm.br', '(55) 99661-6378', '2019-05-21 20:12:21', '2019-05-21 20:12:21', '$2a$10$wJ1XeWWj98UOp7nwal6/nug8jtBud8i4ZhbLZEsAnBLjFIG8TG4DO', 5)[0m
+  [1m[35m (182.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/endereco
+Completed 302 Found in 292ms (ActiveRecord: 186.0ms)
+
+
+Started GET "/endereco" for ::1 at 2019-05-21 17:12:21 -0300
+Processing by EnderecoController#new as HTML
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 375ms (Views: 365.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:12:34 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o7MBwZiTi1/Hde4p4tUMHwfRAaWAXv308G6b/LsJRyfSOUmun2Gvn1Fqg0+//Gb0SeCL60Nm5OeUGfp1uQYRNA==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"Casa", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 395ms (Views: 376.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:15:41 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 425ms (Views: 412.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:15:44 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AE06JV6437ksR3r/DSMzz6IVttYHh1OjVukymNvizIgLapjuufqZ7y1nGXj1JwE0FdIhwGld011GLl/IDm48KQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=15
+Completed 302 Found in 110ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/endereco?id_user=15" for ::1 at 2019-05-21 17:15:44 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"15"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 388ms (Views: 373.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:15:48 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yyCQmkIpvibWD8GpDIKHIG/ZErM/0c23PAvVd9dS8x26qtj1Rdua5kAQrM9Rq+3LIeiY/fzp1KRYfLT+1V2lDg==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 423ms (Views: 403.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:15:58 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 358ms (Views: 347.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:16:02 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SZXTGPZ8d+8bH3txppBLy7PJA3pEpYUT8HQyuwgmugZCsnHTET4xuRo/GPZelHkwBA6UbCp/Be3gs1/r3apKpw==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=15
+Completed 302 Found in 86ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/endereco?id_user=15" for ::1 at 2019-05-21 17:16:02 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"15"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 374ms (Views: 363.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:16:59 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ph9uzXvrspRL89hSErJl/RMyisMhajlskc46iMv9ERhPlSaifBmWVN3stTRPmw8WXQMAjeJSIH/1uVsByfJHCw==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/endereco_controller.rb:8:in `create'
+Started GET "/sessions" for ::1 at 2019-05-21 17:23:35 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 362ms (Views: 351.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:23:37 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+v5tLVXSWycJbkEexUI3WZyTP68dnCIcHaRUIW8qldXx2c/mspAdcQhOIpk9RgWiK1SouXNGouINYzlxuqZldA==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=15
+Completed 302 Found in 110ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/endereco?id_user=15" for ::1 at 2019-05-21 17:23:37 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"15"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 384ms (Views: 372.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:23:46 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yMBZw2+fiDF+UGwIYEpgVUGnKIchykplfFUqinKTocy5ShGsaG2s8ehPAW49Ywq+D5aiyeLyU3YYIksDcJz33w==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 419ms (Views: 387.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:23:52 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 355ms (Views: 343.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:23:55 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWOhxVVQbuQ2nF91pAP90U1Dlyi18UoZPS/REh04d2haRAMOshIosje8PPJcB88q+oQAPtsryuct6LxCyLSHyQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=15
+Completed 302 Found in 85ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/endereco?id_user=15" for ::1 at 2019-05-21 17:23:55 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"15"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 401ms (Views: 389.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:24:07 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YDUd9j2wiU7ZR//ipJg53t42ZSoD9LIbevf7Q0HU17sRv1WZOkKtjk9YkoT5sVM1kAfvZMDMqwgegJrKQ9uBqA==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 394ms (Views: 390.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:26:14 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 395ms (Views: 384.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:26:17 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cbYNgflWVYcv+wukQy0hRpLv570gVqscSU7Zm7j2RIF6ka9KHhQT0S7baCO7KRO9JShwq06MK+JZibTLbXq0IA==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco.15
+Completed 302 Found in 110ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/endereco.15" for ::1 at 2019-05-21 17:26:17 -0300
+Processing by EnderecoController#new as 
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 601ms (Views: 478.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:26:27 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u9KJ24ym6s4iAI/TPkXikokHSzrSV58/87qTYJhVFOPKWMG0i1TODrQf4rVjbIh5xzbBdBFvhiyXzfLpmlpC8A==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 420ms (Views: 398.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:27:05 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 381ms (Views: 371.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:27:07 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"udtDrN6eGJ5RxuHbX7Y+KBoLN3AQv3fRzzWivV3MdqGy/OFnOdxeyFDmglynsgzTrcygZn5l9y/f8s/tiECGAA==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco.15
+Completed 302 Found in 109ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/endereco.15" for ::1 at 2019-05-21 17:27:07 -0300
+Processing by EnderecoController#new as 
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 627ms (Views: 497.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:27:16 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sa8Jie5JEKdENJfVCjd1ahdYSTvYtAZG6OjHKnSjcorAJUHm6bs0Z9Ir+rNXHh+BWWnDdRuMH1WMn6ajdqwkmQ==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = 'id') LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 523ms (Views: 500.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:30:13 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 403ms (Views: 393.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:30:15 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BJYzp5hk5LZbd7kBC1vs2RWLsFt7LFZ7uwQP6r2m9rAPsZFsfyai4FpX2obzX94iokwnTRX21oWrw2K6aCoGEQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=15
+Completed 302 Found in 110ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/endereco?id_user=15" for ::1 at 2019-05-21 17:30:15 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"15"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 406ms (Views: 395.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:30:19 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hixc/e1OIHs0FFKJAKPkKWM30icElinO6F2igscERJVvphSS6rwEu6ILP+9dio7CLQZYaceuMN2MKsMLxQsShg==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (can't quote Array):
+  
+app/controllers/endereco_controller.rb:8:in `create'
+Started POST "/endereco" for ::1 at 2019-05-21 17:31:58 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hixc/e1OIHs0FFKJAKPkKWM30icElinO6F2igscERJVvphSS6rwEu6ILP+9dio7CLQZYaceuMN2MKsMLxQsShg==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 398ms (Views: 368.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:34:50 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 385ms (Views: 375.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:34:53 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JVlrDnehnZLLscCPjuCAHn8/PO/auxpD1fm3Q+s1C94ufsnFkOPbxMqRowh25LLlyPir+bRhmr3FPtoTPrn7fw==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=15
+Completed 302 Found in 108ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/endereco?id_user=15" for ::1 at 2019-05-21 17:34:53 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"15"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 392ms (Views: 381.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:34:57 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6ABLg077znPGcTX6pkgoAk3x4M+jwY03j+jDX40uTmeZigPsSQnqs1BuWJz7YULpA8BqgWD5lCTrn6LWjyEYdA==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 431ms (Views: 406.9ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:35:14 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XLN2mLmEShnaJEIDo/hmLFLvXQV7f5VUk1mo8Z+itbotOT73vnZu2Uw7L2X+0QzHHN7XS7hHjEf3Lsl4na3jqQ==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 447ms (Views: 411.4ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:35:51 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RRKio8VsiQX4PJ5AxNlaQmYzHO3MBdejIQIFhCJlb+00mOrMwp6txW4j8yaZ8DCpKAKWow89zrBFdWQNIGo5/g==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 491ms (Views: 461.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:35:57 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 373ms (Views: 363.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:36:01 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/ZwI6sKAfNuxMZqZLOR4qY691Qle7B8NTD+jNDA2FFv2u6ohJcI6jbAR+R7U4EpSOXpCHzA2n/Nc+M5k5brk+g==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=15
+Completed 302 Found in 106ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/endereco?id_user=15" for ::1 at 2019-05-21 17:36:01 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"15"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '15') LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 378ms (Views: 364.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:36:05 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E2esipV9XM1ju0OhTO88lMyd/NoqmgwYk0a1QfUcGxdi7eTlko94DfWkLscRxlZ/gqx2lOmiFQv3MdTI9xNNBA==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 395ms (Views: 393.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:39:25 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qOQAO1WSVMT5qT2tkiaAovgyebJszdyZaFjTjgME7f7ZbkhUUmBwBG+2UMvPD+pJtgPz/K/1xYoML7IHAQu77Q==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+Completed 500 Internal Server Error in 312ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<EnderecoController:0xadaa1d0>):
+  
+app/controllers/endereco_controller.rb:9:in `create'
+Started POST "/endereco" for ::1 at 2019-05-21 17:40:38 -0300
+  
+SyntaxError (D:/ProjectOne/app/controllers/endereco_controller.rb:3: syntax error, unexpected keyword_def, expecting ')'
+    def new
+       ^):
+  
+app/controllers/endereco_controller.rb:3: syntax error, unexpected keyword_def, expecting ')'
+Started POST "/endereco" for ::1 at 2019-05-21 17:40:51 -0300
+  
+ActionController::RoutingError (undefined local variable or method `params' for EnderecoController:Class):
+  
+app/controllers/endereco_controller.rb:2:in `<class:EnderecoController>'
+app/controllers/endereco_controller.rb:1:in `<top (required)>'
+Started GET "/endereco" for ::1 at 2019-05-21 17:41:30 -0300
+Processing by EnderecoController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 446ms (Views: 421.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:41:33 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 375ms (Views: 364.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:41:35 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BdDUZaoCO+UqNWp8tfPtlL5912b36sOuyHBwMJ3UWswO93auTUB9sysVCftN999vCbpAcJkwQ1DYtx1gSFiqbQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=15
+Completed 302 Found in 100ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/endereco?id_user=15" for ::1 at 2019-05-21 17:41:36 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"15"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '15') LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 388ms (Views: 373.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:41:39 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wPt57pyFUSGlZEadT9f3nd3xhGdK62z9/sbfuTwnAy+xcTGBm3d14TN7K/sS/p12k8AOKYnTde6asb4wPihVPA==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 441ms (Views: 418.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:42:58 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 365ms (Views: 355.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:43:01 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ke7w8IqNzrXaOe9BdhlnDICrTz13hfVNE0iuwgySjQyayVI7bc+I49sZjMaOHVX3N2zYKxlfdbMDj8OS2R59rQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=15
+Completed 302 Found in 109ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/endereco?id_user=15" for ::1 at 2019-05-21 17:43:01 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"15"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 378ms (Views: 367.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:43:05 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B3SJNoXbCPpP80gJA160XbGsGIBrfL3kPKQ0i0EQZuV2/sFZgiksOtnsJW9ed962/52SzqhEpPdY01UCQx8w9g==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 418ms (Views: 397.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:44:12 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JozSRYxgi8IUYazh+iYKn11kOhnvrrsuxJMDYZZqE6BXBpoqi5KvAoJ+wYenD2B0E1WwVyyWoj2g5GLolGVFsw==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 419ms (Views: 384.4ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:47:28 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aZCy19dviIKEJKxh4gtjG7ThgFCzYGREflo0DmHl65kYGvq40J2sQhI7wQe/Ignw+tAKHnBYfVcaLVWHY+q9ig==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '1') LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 418ms (Views: 390.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:47:53 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 389ms (Views: 378.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:47:56 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HY7t6wSzk0IsYYoWzcxCSEw9IqT7kn1pFz7U4RY4ayQWqU8g4/HVFC1B6ZE1yHCz+/q1spVI/ZcH+bmxw7SbhQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=15
+Completed 302 Found in 102ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/endereco?id_user=15" for ::1 at 2019-05-21 17:47:56 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"15"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 390ms (Views: 376.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:48:01 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hm6P5NJ5KkGG5LDuJLxTmswbT84vPl9cmCGHJ4WLHn5v5MeL1YsOgRD73Yh5lTlxgirFgOwGRk/8Vuauh4RIbQ==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '1') LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 386ms (Views: 381.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:48:12 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ltjfuIzw0KMbJVKHzGOkBJK7cX/9DYqOjc4zhcPreMrnUpfXiwL0Y406P+GRSs7v3Ir7MT41k53puVIMweQu2Q==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '15') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', '829', '98150-000', 'Limeira', 'Pinhal Grande', '2019-05-21 20:48:12', '2019-05-21 20:48:12')[0m
+  [1m[35m (46.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (12.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' AND (`users`.`id` != 15) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 117ms (ActiveRecord: 60.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 17:48:12 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 464ms (Views: 452.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 17:48:14 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:48:14 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 397ms (Views: 384.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 17:49:16 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 384ms (Views: 373.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 17:49:21 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R4lC5VEDyn8pX+OQvZLNAxYsa+UDHhezIPqib+DZZBhVbc63FUu5APbTe67FjCGFtvYOQJ6xQOKl1AJ41H+6Kg==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(11) 11111-1111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `users` (`nome`, `email`, `zap`, `created_at`, `updated_at`, `password_digest`, `user_level`) VALUES ('Willian Denner Soares', 'wsoares@inf.ufsm.br', '(11) 11111-1111', '2019-05-21 20:49:21', '2019-05-21 20:49:21', '$2a$10$K80Y2Rt/jl.emlSfzoHPb.8F3FBM3wFnTMXCKCeJjakdpuL5r6Nfq', 5)[0m
+  [1m[35m (27.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/endereco?id_user=16
+Completed 302 Found in 141ms (ActiveRecord: 32.0ms)
+
+
+Started GET "/endereco?id_user=16" for ::1 at 2019-05-21 17:49:21 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"16"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 404ms (Views: 393.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:49:25 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kzkYP6D3j0NldWGiewtuTfdMcEkKUEugr9c8b3m6ZV/is1BQpwWrg/NqDMQmIgSmuX36B8loUrPLoF3me7UzTA==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '15') LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 407ms (Views: 384.2ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:50:16 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pCOJh6+F3XlAZewGExTH30dIarUiEXZIHc8GSLbPTWbVqcHoqHf5udZ6gWBOPa00CXng++Epb1t5uGfBtMAbdQ==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 491ms (Views: 454.7ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:51:09 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"APz0SfE+1fBPdGfArXKQ2iPRzNKd4QVgOPdeiEb+00Vxdrwm9szxMNlrCqbwW/oxbeBGnF7ZHHNcgD8BRPGFVg==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 415ms (Views: 387.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:52:04 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TtR05DIVTo/yy3vFCI0ctiFKiCZbABGVysfLVRSRuXY/XjyLNedqT2TUFqNVpHZdb3sCaJg4CIausKrcFp7vZQ==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = NULL) LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 414ms (Views: 385.2ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:52:15 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Yi7rnw6mj7IovZ+DmnJ87ywCoE8u8+VNDLRSJbYx8SQAvPBe8i+/l69mxhTQKMY8oGAz/+D1oZQRbDBlNeR1w==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '0') LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 488ms (Views: 452.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:52:33 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 364ms (Views: 352.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:52:36 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jso/qL/yO8A+mg2psVzn129FlW6FcaxjYDuZW3JUcO8t7Z1jWLB9lj+6bi5JWNUs2IICeOurLJ1w/PQLp9iATg==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=16
+Completed 302 Found in 118ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/endereco?id_user=16" for ::1 at 2019-05-21 17:52:36 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"16"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 420ms (Views: 408.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:52:40 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K2B6mgQBbURL+nT+OgJCC6niMLrQndPQHzpbVQhAZCRa6jL1A/NJhN3lGZhnKyjg59O69BOlysN7TTrcCk8yNw==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '16') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', '829', '98150-000', 'Limeira', 'Pinhal Grande', '2019-05-21 20:52:40', '2019-05-21 20:52:40')[0m
+  [1m[35m (45.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' AND (`users`.`id` != 16) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 83ms (ActiveRecord: 52.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 17:52:40 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (4.0ms)
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 389ms (Views: 376.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 17:53:18 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:53:18 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 373ms (Views: 361.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:53:22 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WaUmvGuKcfdqTN8+DY+/0HtLjhppMR3SjM5Cn+FFhKtSgoR3jMg3oWtsvLn1i40rzIwZDAfrnSycCS/PNMl0Cg==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=16
+Completed 302 Found in 86ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/endereco?id_user=16" for ::1 at 2019-05-21 17:53:22 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"16"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 388ms (Views: 377.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:55:26 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vUcr+QM3sDgJimmySEXMnbiGfMab83fV5IiZziuyqOnMzWOWBMWU+J+VBNQVbKZ29rf2iFjLbsaA//hHKb3++g==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '0') LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 398ms (Views: 385.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:56:09 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 376ms (Views: 365.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:56:13 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nWKZPmD8iXEsiz7iPwWXRsekYHUnBrOx/4Mn3NvYuUSWRTv1h77PJy2rXWXHAaW9cGP3Y0ncM0/vREqMDlRJ5Q==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=16
+Completed 302 Found in 105ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/endereco?id_user=16" for ::1 at 2019-05-21 17:56:13 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"16"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 383ms (Views: 368.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 17:56:21 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LLCnOW5x9Jx2xS9RkuZ9dVGmIrb92JFM8EdLN7TW4O9dOu9WaYPQXODaQjfPzxeeH5eo+D7giF+UMCq+ttm2/A==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '16') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', '829', '98150-000', 'Limeira', 'Pinhal Grande', '2019-05-21 20:56:21', '2019-05-21 20:56:21')[0m
+  [1m[35m (83.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' AND (`users`.`id` != 16) LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 124ms (ActiveRecord: 90.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 17:56:22 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 427ms (Views: 415.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 17:57:19 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 17:57:20 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 369ms (Views: 359.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 17:57:24 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5oZsjpCeXpEzKxTGmw4HeN1coGrQTkaqVpQcEB5qZ3/toc5Fd9wYxzILd0FjCjWDaps3fL6UxlRGU3FAy+aX3g==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=16
+Completed 302 Found in 94ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/endereco?id_user=16" for ::1 at 2019-05-21 17:57:24 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"16"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 483ms (Views: 469.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 18:03:17 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gA4n3H0h0W90wAlGM7e9znn8a72pPsGeEPhzUnnoNZrxhG+zetP1r+LfZCBuntclN83h82oG2I10jxLbe+djiQ==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '0') LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 405ms (Views: 374.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/endereco" for ::1 at 2019-05-21 18:03:55 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by EnderecoController#new as HTML
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (106.0ms)
+Started GET "/" for ::1 at 2019-05-21 18:03:57 -0300
+Completed 200 OK in 1470ms (Views: 1449.7ms | ActiveRecord: 0.0ms)
+
+
+Processing by SessionsController#new as HTML
+Started GET "/" for ::1 at 2019-05-21 18:04:10 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.0ms)
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 408ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+    4:     <title>ProjetoOne</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___562384881_57263472'
+Completed 200 OK in 675ms (Views: 644.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 18:04:16 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s0KeIL58EQD1302cPrBlOIxk0m0C8R4BXsIC9Jx9lm/CyNZPuY41wGPAIPpjmQ/TwlVYI8HJBxI6tWN9nnLAfA==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=16
+Completed 302 Found in 602ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/endereco?id_user=16" for ::1 at 2019-05-21 18:04:17 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"16"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 406ms (Views: 393.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 18:04:21 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4HDi6GjScbZBdbvA3Bd5sSansG13dhsjlvFrZgIOWn+R+qqHbyBVdtdq1qaBPhNaaJY6I7ROAjDyhgrvAAEMbA==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '16') LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', '829', '98150-000', 'Limeira', 'Pinhal Grande', '2019-05-21 21:04:21', '2019-05-21 21:04:21')[0m
+  [1m[35m (30.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEndereco Load (9.0ms)[0m  [1m[34mSELECT  `enderecos`.* FROM `enderecos` ORDER BY created_at DESC LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' AND (`users`.`id` != 16) LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 96ms (ActiveRecord: 49.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 18:04:21 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (8.0ms)
+  Rendered homes/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 394ms (Views: 382.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 18:06:48 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 18:06:49 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 375ms (Views: 364.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 18:06:51 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WKbQGrFMOTt5mbehMO19cE4HwDWNvvNIetRTqfnoYHxTgXLRVg5/bXi51CbI6U+L+cBXI+Nkc7ZqEz75LGSQ3Q==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=16
+Completed 302 Found in 113ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/endereco?id_user=16" for ::1 at 2019-05-21 18:06:51 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"16"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 375ms (Views: 361.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 18:06:55 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2kGN17nfwS0QKkNPmozg4g139fpxtzRAl1l94zOHUbary8W4vi3l7YY1LinHpYoJQ0Z/tLKPLVPzLhxqMYgHpQ==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '16') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', '829', '98150-000', 'Limeira', 'Pinhal Grande', '2019-05-21 21:06:55', '2019-05-21 21:06:55')[0m
+  [1m[35m (82.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEndereco Load (0.0ms)[0m  [1m[34mSELECT  `enderecos`.* FROM `enderecos` ORDER BY created_at DESC LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' AND (`users`.`id` != 16) LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 127ms (ActiveRecord: 87.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 18:06:55 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 400ms (Views: 388.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 18:07:11 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 18:07:11 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 417ms (Views: 406.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 18:10:18 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uqvE48QnlicAT9Gm1G/zW171JfBod7sf7XSkiG63gWyxjGYoI2XQcQFvsiEsa8Gg6TKy5gatO+H9s8nYuztxzQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=16
+Completed 302 Found in 121ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/endereco?id_user=16" for ::1 at 2019-05-21 18:10:18 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"16"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 404ms (Views: 391.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 18:10:22 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O7oCsdvOftEsaZZYXqPS4K6msAAG7OfZfTjcn1rtdOxKMEre3DxaEbp2+z4DirgL4Jc6TsXU/soZT70WWOIi/w==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '16') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', '829', '98150-000', 'Limeira', 'Pinhal Grande', '2019-05-21 21:10:22', '2019-05-21 21:10:22')[0m
+  [1m[35m (66.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEndereco Load (0.0ms)[0m  [1m[34mSELECT  `enderecos`.* FROM `enderecos` ORDER BY created_at DESC LIMIT 1[0m
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 71.0ms)
+
+
+  
+NoMethodError (undefined method `update_attribute' for #<Class:0x5640e88>
+Did you mean?  _default_attributes):
+  
+app/controllers/endereco_controller.rb:15:in `create'
+Started POST "/endereco" for ::1 at 2019-05-21 18:12:54 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O7oCsdvOftEsaZZYXqPS4K6msAAG7OfZfTjcn1rtdOxKMEre3DxaEbp2+z4DirgL4Jc6TsXU/soZT70WWOIi/w==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '0') LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 394ms (Views: 363.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 18:13:03 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 667ms (Views: 651.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 18:13:06 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kO7V/ccYv+dZCNbIIO3m233qJtJG2S87KGInyXtzIdabyXc2IFr5sVgotU/Y6dQgyi2xxCgDr8U4pUqZrv/Rdw==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=16
+Completed 302 Found in 98ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/endereco?id_user=16" for ::1 at 2019-05-21 18:13:06 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"16"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 372ms (Views: 360.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 18:13:10 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oNkGTuhwCNwy7lH4uhXn/QFnJcf5S6o5rTg9VCp8pCTRU04h74IsHKTxPJ7nPI0WT1aviTpzsyrJT1zdKHPyNw==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '16') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', '829', '98150-000', 'Limeira', 'Pinhal Grande', '2019-05-21 21:13:10', '2019-05-21 21:13:10')[0m
+  [1m[35m (82.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEndereco Load (0.0ms)[0m  [1m[34mSELECT  `enderecos`.* FROM `enderecos` ORDER BY created_at DESC LIMIT 1[0m
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 84.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2)):
+  
+app/controllers/endereco_controller.rb:15:in `create'
+Started POST "/endereco" for ::1 at 2019-05-21 18:13:35 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oNkGTuhwCNwy7lH4uhXn/QFnJcf5S6o5rTg9VCp8pCTRU04h74IsHKTxPJ7nPI0WT1aviTpzsyrJT1zdKHPyNw==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '0') LIMIT 1[0m
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 385ms (Views: 358.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 18:13:40 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 363ms (Views: 351.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 18:13:43 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yruxQRuEjhi1TEK3/FVjOttmFr5JM1uMcmFsnbVEx57BnBOK/MbITrRsITAEUVHBbKGBqCfp23JipgHNYMg3Pw==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/endereco?id_user=16
+Completed 302 Found in 106ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/endereco?id_user=16" for ::1 at 2019-05-21 18:13:43 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"16"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 374ms (Views: 363.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 18:13:47 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0OZteon54yykAq2wfZoQQJIaAKaQsuOGUYLMyfubz1uhbCUVjgvH7DIdwNYgs3qr3CuK6FOK+pU19a1A+ZSZSA==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"829", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '16') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', '829', '98150-000', 'Limeira', 'Pinhal Grande', '2019-05-21 21:13:47', '2019-05-21 21:13:47')[0m
+  [1m[35m (150.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEndereco Load (1.0ms)[0m  [1m[34mSELECT  `enderecos`.* FROM `enderecos` ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (68.0ms)[0m  [1m[33mUPDATE `users` SET `enderecoID` = 13, `updated_at` = '2019-05-21 21:13:47' WHERE `users`.`id` = 16[0m
+  [1m[35m (49.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 286ms (ActiveRecord: 268.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 18:13:47 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (4.0ms)
+  Rendered homes/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 452ms (Views: 433.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 18:14:21 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 18:14:21 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 374ms (Views: 361.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-21 18:14:24 -0300
+Processing by SignupController#new as HTML
+  Rendering signup/new.html.erb within layouts/application
+  Rendered signup/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 365ms (Views: 353.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-21 18:14:30 -0300
+Processing by SignupController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbjOM8k/nDNdi9My8fkL7dfT/txDdv814fi0DsMKjzrXXEJhjXfvTIIHSwyJ5+drdwmbed7ZqGRk1hQZ96xRCA==", "user"=>{"nome"=>"Willian Denner Soares", "email"=>"wsoares@inf.ufsm.br", "zap"=>"(11) 11111-1111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'wsoares@inf.ufsm.br' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `users` (`nome`, `email`, `zap`, `created_at`, `updated_at`, `password_digest`, `user_level`) VALUES ('Willian Denner Soares', 'wsoares@inf.ufsm.br', '(11) 11111-1111', '2019-05-21 21:14:30', '2019-05-21 21:14:30', '$2a$10$awLkMeh4ww3mZOvglgQh0.c3IDF5n4SvXRnQtRRk9FShfrW/bJJ.2', 5)[0m
+  [1m[35m (53.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/endereco?id_user=17
+Completed 302 Found in 144ms (ActiveRecord: 54.0ms)
+
+
+Started GET "/endereco?id_user=17" for ::1 at 2019-05-21 18:14:30 -0300
+Processing by EnderecoController#new as HTML
+  Parameters: {"id_user"=>"17"}
+  Rendering endereco/new.html.erb within layouts/application
+  Rendered endereco/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 382ms (Views: 371.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/endereco" for ::1 at 2019-05-21 18:14:36 -0300
+Processing by EnderecoController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A9FwqOd3BYVH8woeUi/ShgZg5pPxQwmiAYAvoqfPeQNyWzjH4IUhRdHsZ3gPBrhtSFFs3TJ7ELFl904rpcAvEA==", "endereco"=>{"rua"=>"Rua 7 de Setembro, 829", "numero"=>"829", "complemento"=>"Casa", "cep"=>"98150-000", "bairro"=>"Limeira", "cidade"=>"Pinhal Grande"}, "commit"=>"Cadastrar"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (id = '17') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `enderecos` (`rua`, `numero`, `complemento`, `cep`, `bairro`, `cidade`, `created_at`, `updated_at`) VALUES ('Rua 7 de Setembro, 829', '829', 'Casa', '98150-000', 'Limeira', 'Pinhal Grande', '2019-05-21 21:14:36', '2019-05-21 21:14:36')[0m
+  [1m[35m (83.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEndereco Load (1.0ms)[0m  [1m[34mSELECT  `enderecos`.* FROM `enderecos` ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[33mUPDATE `users` SET `enderecoID` = 14, `updated_at` = '2019-05-21 21:14:36' WHERE `users`.`id` = 17[0m
+  [1m[35m (122.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 219ms (ActiveRecord: 206.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 18:14:36 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 383ms (Views: 372.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 18:14:58 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 18:14:58 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 418ms (Views: 407.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-05-21 18:15:02 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CezGIi4W/EyT/WyM5ripLb8hhNtLru8T6BEU1Ya9DwYCy2TpyVS6GpLdDwsevJvWCOYTzSV0b+341nmFUzH/pw==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 85ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2019-05-21 18:15:02 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 384ms (Views: 373.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-05-21 18:15:05 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-05-21 18:15:05 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 408ms (Views: 397.1ms | ActiveRecord: 0.0ms)
+
+

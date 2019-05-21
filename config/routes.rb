@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   post "sessions" => "sessions#create"
   get "signup" => "signup#new"
   post "signup" => "signup#create"
+  get "endereco" => "endereco#new"
+  post "endereco" => "endereco#create"
   get "exit" => "sessions#destroy"
   get "home" => "homes#new"
   get "vender" => "produtos#new"
