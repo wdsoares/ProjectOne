@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :denuncia
+  resources :produtoimagems
   root "sessions#new"
   post "/" => "sessions#create"
   get "sessions" => "sessions#new"
@@ -12,8 +14,11 @@ Rails.application.routes.draw do
   get "vender" => "produtos#new"
   post "vender" => "produtos#create"
   get "anuncios" => "produtos#index"
+  delete "produto" => "produtos#destroy"
   get "admin" => "homes#index"
   get "forgotpwd" => "forgotpwds#new"
   post "forgotpwd" => "forgotpwds#create"
+  get "comprar" => "compras#new"
+  get "busca" => "compras#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

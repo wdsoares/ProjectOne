@@ -22,10 +22,10 @@
 //= require_tree .
 
 $(document).on('turbolinks:load', function() {
-
     jQuery(function($){
         $('#zap').inputmask('(99) 9999[9]-9999');
+        $('#data_pub').inputmask('99/99/9999');
      });
-
 });
+
 

@@ -10,9 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190521184223) do
+ActiveRecord::Schema.define(version: 20190628082750) do
 
-  create_table "enderecos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "compras", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "denuncia", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "id_delator", null: false
+    t.integer "idAnuncio", null: false
+    t.index ["idAnuncio"], name: "idAnuncio_idx"
+    t.index ["id_delator"], name: "id_delator_idx"
+  end
+
+  create_table "enderecos", id: :integer, default: nil, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "rua"
     t.string "numero"
     t.string "complemento"
@@ -34,6 +48,14 @@ ActiveRecord::Schema.define(version: 20190521184223) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "produtoimagems", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "produto_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "imagem", null: false
+    t.index ["produto_id"], name: "produto_id_idx"
+  end
+
   create_table "produtos", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "titulo", limit: 100
     t.string "autores", limit: 100, null: false
@@ -45,6 +67,7 @@ ActiveRecord::Schema.define(version: 20190521184223) do
     t.datetime "updated_at", null: false
     t.integer "user_id", null: false
     t.integer "visivel", null: false
+    t.string "produtoimagem"
   end
 
   create_table "users", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -55,7 +78,8 @@ ActiveRecord::Schema.define(version: 20190521184223) do
     t.datetime "updated_at", null: false
     t.string "password_digest"
     t.integer "user_level", null: false
-    t.integer "enderecoID"
+    t.integer "enderecoID", null: false
+    t.index ["enderecoID"], name: "enderecoID_idx"
   end
 
   create_table "vendas", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -69,6 +93,10 @@ ActiveRecord::Schema.define(version: 20190521184223) do
     t.index ["idvendedor"], name: "idvendedor_idx"
   end
 
+  add_foreign_key "denuncia", "produtos", column: "idAnuncio", name: "idAnuncio"
+  add_foreign_key "denuncia", "users", column: "id_delator", name: "id_delator"
+  add_foreign_key "produtoimagems", "produtos", name: "produto_id", on_delete: :cascade
+  add_foreign_key "users", "enderecos", column: "enderecoID", name: "enderecoID"
   add_foreign_key "vendas", "produtos", column: "idproduto", name: "idproduto"
   add_foreign_key "vendas", "users", column: "idcomprador", name: "idcomprador"
   add_foreign_key "vendas", "users", column: "idvendedor", name: "idvendedor"

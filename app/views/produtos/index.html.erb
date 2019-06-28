@@ -9,6 +9,9 @@
                         <thead>
                             <tr>
                                 <th style = "color: white;">
+                                    <%= image_tag "camera.png", size: "25x20", style: "margin-left: 35px;"  %>
+                                </th>
+                                <th style = "color: white;">
                                     Título
                                 </th>
                                 <th style = "color: white;">
@@ -20,19 +23,27 @@
                                 <th style = "color: white;">
                                     Editora
                                 </th>
+                                <th style = "color: white;">
+                                    Ações
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
-                            <% Produto.where(:user_id => current_user.id).find_each do |produto| %>
-                                <tr>
+                            <% @produto.each do |produto| %>   
+                            <% Produtoimagem.where(:produto_id => produto.id).find do |image| %>
+                            <tr>
+                                    <td style="color:white;"><%= image_tag(image.imagem.thumb.url) %></td>
                                     <td style="color:white;"><%= produto.titulo %></td>
                                     <td style="color:white;"><%= produto.autores %></td>
                                     <td style="color:white;"><%= produto.data_pub %></td>
                                     <td style="color:white;"><%= produto.editora %></td>
+                                    <td style="color:white;"><%= link_to 'Destroy', {:controller=>:produtos,:action=>:destroy, :id=>produto}, method: :delete, data: { confirm: 'Você tem certeza disso?' } %></td>
                                 </tr>
+                            <% end %>
                             <% end %>
                         </tbody>
                     </table>
+                    <p id="notice"><%= notice %></p>
                     <%= link_to "Voltar", home_path, class:"btn btn-sm btn-danger-home active" %>
                 </div>
             </div>
