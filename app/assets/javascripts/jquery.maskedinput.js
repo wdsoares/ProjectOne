@@ -14,7 +14,8 @@ $(document).on('turbolinks:load', function() {});
         definitions: {
             "9": "[0-9]",
             a: "[A-Za-z]",
-            "*": "[A-Za-z0-9]"
+            "*": "[A-Za-z0-9]",
+            dd: "[0-2][0-9]",
         },
         autoclear: !0,
         dataName: "rawMaskFn",

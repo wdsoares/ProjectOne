@@ -35646,3 +35646,1406 @@ Migrating to AddProdutoImagemToProduto (20190628082750)
   [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('7120803551518529670')[0m
   [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2019-06-28 05:28:27 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 1261ms (Views: 1240.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-06-28 05:29:01 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/7buOlVUB3RdyqtIFMb1r/+zWXQgUMV3XkNBiNDf1EQ1i1fuZYqW5oJ95cv8VXSE55upvwtquOyUSZNzWS/H1g==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 129ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:29:01 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (7.0ms)
+  Rendered homes/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 443ms (Views: 432.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/vender" for ::1 at 2019-06-28 05:29:08 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered produtos/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 472ms (Views: 458.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/vender" for ::1 at 2019-06-28 05:30:02 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qz9TvDQPwf6J8Lh2k+9AeYKRVwC2DXReClQAUFvohUGo09qLZtNGZqF8/P+PYvXFYOlE8xPZVJ1Z3bzwpNBEUA==", "produto"=>{"titulo"=>"kk eae man", "autores"=>"Daniel Orivaldo da Silva", "edicao"=>"23ª", "data_pub"=>"11/11/1999", "isbn"=>"1234567891234", "editora"=>"Fechou"}, "produtoimagem"=>{"imagem"=>[#<ActionDispatch::Http::UploadedFile:0x66082f8 @tempfile=#<Tempfile:C:/Users/CACETI~1/AppData/Local/Temp/RackMultipart20190628-5204-i6usy6.jpg>, @original_filename="55897283_2071985592915184_5622246506976247808_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"produtoimagem[imagem][]\"; filename=\"55897283_2071985592915184_5622246506976247808_n.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Criar Anúncio"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `produtos` (`titulo`, `autores`, `edicao`, `data_pub`, `isbn`, `editora`, `created_at`, `updated_at`, `user_id`, `visivel`) VALUES ('kk eae man', 'Daniel Orivaldo da Silva', 23, '11/11/1999', '1234567891234', 'Fechou', '2019-06-28 08:30:02', '2019-06-28 08:30:02', 17, 1)[0m
+  [1m[35m (22.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 107 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `produtoimagems` (`produto_id`, `created_at`, `updated_at`, `imagem`) VALUES (107, '2019-06-28 08:30:03', '2019-06-28 08:30:03', '55897283_2071985592915184_5622246506976247808_n.jpg')[0m
+  [1m[35m (98.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 1021ms (ActiveRecord: 127.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:30:03 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (5.0ms)
+  Rendered homes/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 480ms (Views: 468.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:30:06 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (1.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 107[0m
+  Rendered produtos/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 429ms (Views: 414.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:31:21 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (0.0ms)
+  [1m[36mProduto Load (2.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 107[0m
+  Rendered produtos/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 436ms (Views: 421.0ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/produto?id=107" for ::1 at 2019-06-28 05:31:23 -0300
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JkSNfvh+sc6MSzyUSzTehzcXsLCaPCILet6xqnrR/GPseTSqyKAgXFP8chejp1+sLz9Ae7EGX5Cw1GNR8yHv8Q==", "id"=>"107"}
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 107 LIMIT 1[0m
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 107 LIMIT 1[0m  [["id", 107], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM `produtos` WHERE `produtos`.`id` = 107[0m
+  [1m[35m (21.0ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: imagem is not an attribute known to Active Record. This behavior is deprecated and will be removed in the next version of Rails. If you'd like imagem to be managed by Active Record, add `attribute :imagem to your class. (called from destroy at D:/ProjectOne/app/controllers/produtos_controller.rb:43)
+DEPRECATION WARNING: imagem is not an attribute known to Active Record. This behavior is deprecated and will be removed in the next version of Rails. If you'd like imagem to be managed by Active Record, add `attribute :imagem to your class. (called from destroy at D:/ProjectOne/app/controllers/produtos_controller.rb:43)
+Completed 500 Internal Server Error in 384ms (ActiveRecord: 22.0ms)
+
+
+  
+NameError (undefined local variable or method `anuncios_patch' for #<ProdutosController:0x8f5acb8>
+Did you mean?  anuncios_path):
+  
+app/controllers/produtos_controller.rb:45:in `block (2 levels) in destroy'
+app/controllers/produtos_controller.rb:44:in `destroy'
+Started DELETE "/produto?id=107" for ::1 at 2019-06-28 05:32:37 -0300
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JkSNfvh+sc6MSzyUSzTehzcXsLCaPCILet6xqnrR/GPseTSqyKAgXFP8chejp1+sLz9Ae7EGX5Cw1GNR8yHv8Q==", "id"=>"107"}
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 107 LIMIT 1[0m
+Completed 404 Not Found in 22ms (ActiveRecord: 6.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Produto with 'id'=107):
+  
+app/controllers/produtos_controller.rb:58:in `set_produto'
+Started GET "/" for ::1 at 2019-06-28 05:32:55 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 460ms (Views: 447.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-06-28 05:33:36 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GFLA/AMN8AT8z7OvX08ZimMN9XWXTUQfpyQaTzBs1iPSb3koM9NhliN4/Sy33JiheyUFvrx3OYRtLsi0uZzFsQ==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 111ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:33:36 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (6.0ms)
+  Rendered homes/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 470ms (Views: 456.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/vender" for ::1 at 2019-06-28 05:33:38 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered produtos/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 464ms (Views: 452.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/vender" for ::1 at 2019-06-28 05:33:51 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BnJ5dQR1dxfWySMRMpl+JKpMg3l18FNCOwb0BhwKv0ztnvBCVqnwj/5FZ5guFMuYSDSQitAkc4Foj0im4zJ+XQ==", "produto"=>{"titulo"=>"kk eae man", "autores"=>"Daniel Orivaldo da Silva", "edicao"=>"23ª", "data_pub"=>"11/11/1212", "isbn"=>"9120931023901", "editora"=>"Fechou"}, "produtoimagem"=>{"imagem"=>[#<ActionDispatch::Http::UploadedFile:0xb75b5f0 @tempfile=#<Tempfile:C:/Users/CACETI~1/AppData/Local/Temp/RackMultipart20190628-5204-ouyy9i.jpg>, @original_filename="55897283_2071985592915184_5622246506976247808_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"produtoimagem[imagem][]\"; filename=\"55897283_2071985592915184_5622246506976247808_n.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Criar Anúncio"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `produtos` (`titulo`, `autores`, `edicao`, `data_pub`, `isbn`, `editora`, `created_at`, `updated_at`, `user_id`, `visivel`) VALUES ('kk eae man', 'Daniel Orivaldo da Silva', 23, '11/11/1212', '9120931023901', 'Fechou', '2019-06-28 08:33:51', '2019-06-28 08:33:51', 17, 1)[0m
+  [1m[35m (140.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 108 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `produtoimagems` (`produto_id`, `created_at`, `updated_at`, `imagem`) VALUES (108, '2019-06-28 08:33:52', '2019-06-28 08:33:52', '55897283_2071985592915184_5622246506976247808_n.jpg')[0m
+  [1m[35m (116.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 1162ms (ActiveRecord: 263.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:33:52 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 473ms (Views: 461.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:33:55 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (0.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 108[0m
+  Rendered produtos/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 446ms (Views: 432.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/produto?id=108" for ::1 at 2019-06-28 05:33:57 -0300
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4OSGdqayLtoQiZ8ui0H1Lo/sUGXsCWIGL+5nfDOrP0cq2T+ilmy/SM8+0a1j0nQFl8SgrsczH53l5LWHulss1Q==", "id"=>"108"}
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 108 LIMIT 1[0m
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 108 LIMIT 1[0m  [["id", 108], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM `produtos` WHERE `produtos`.`id` = 108[0m
+  [1m[35m (42.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/anuncios
+Completed 302 Found in 50ms (ActiveRecord: 43.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:33:58 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (1.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  Rendered produtos/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 411ms (Views: 397.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:34:01 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 416ms (Views: 398.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:34:02 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (0.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  Rendered produtos/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 446ms (Views: 432.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:34:04 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 557ms (Views: 545.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:34:52 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (1.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  Rendered produtos/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 407ms (Views: 394.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:34:54 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 386ms (Views: 375.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/vender" for ::1 at 2019-06-28 05:34:55 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered produtos/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 410ms (Views: 399.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/vender" for ::1 at 2019-06-28 05:35:07 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UhL9EH6S+aFLeY7y2Njrp0qaBJIN/cSamEnSClj4r3y5/nQnLE5+OWP1ynvEVV4bqOIXYagp5FnLwG6qp8BubQ==", "produto"=>{"titulo"=>"kk eae man", "autores"=>"Daniel Orivaldo da Silva", "edicao"=>"23ª", "data_pub"=>"11/11/1212", "isbn"=>"1231231231231", "editora"=>"Fechou"}, "produtoimagem"=>{"imagem"=>[#<ActionDispatch::Http::UploadedFile:0xb590fc8 @tempfile=#<Tempfile:C:/Users/CACETI~1/AppData/Local/Temp/RackMultipart20190628-5204-c56ciy.jpg>, @original_filename="55897283_2071985592915184_5622246506976247808_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"produtoimagem[imagem][]\"; filename=\"55897283_2071985592915184_5622246506976247808_n.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Criar Anúncio"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `produtos` (`titulo`, `autores`, `edicao`, `data_pub`, `isbn`, `editora`, `created_at`, `updated_at`, `user_id`, `visivel`) VALUES ('kk eae man', 'Daniel Orivaldo da Silva', 23, '11/11/1212', '1231231231231', 'Fechou', '2019-06-28 08:35:07', '2019-06-28 08:35:07', 17, 1)[0m
+  [1m[35m (66.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 109 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `produtoimagems` (`produto_id`, `created_at`, `updated_at`, `imagem`) VALUES (109, '2019-06-28 08:35:08', '2019-06-28 08:35:08', '55897283_2071985592915184_5622246506976247808_n.jpg')[0m
+  [1m[35m (99.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 967ms (ActiveRecord: 167.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:35:08 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 422ms (Views: 409.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:35:10 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (0.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 109[0m
+  Rendered produtos/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 411ms (Views: 396.9ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/produto?id=109" for ::1 at 2019-06-28 05:35:17 -0300
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2UkOSKNIoPtgXYbMjb38tX3UnSOezIfRN5p+X8xOQxoTdLeck5Yxab/qyE9lLn2eZfxt6LX2+kr9kKykRb5QiA==", "id"=>"109"}
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 109 LIMIT 1[0m
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 109 LIMIT 1[0m  [["id", 109], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM `produtos` WHERE `produtos`.`id` = 109[0m
+  [1m[35m (37.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/anuncios
+Completed 302 Found in 45ms (ActiveRecord: 39.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:35:17 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (0.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  Rendered produtos/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 400ms (Views: 386.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:35:19 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 389ms (Views: 376.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 05:36:12 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered compras/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 399ms (Views: 386.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=Harry+Porra+e+a+Novinha+Rabuda&commit=Buscar" for ::1 at 2019-06-28 05:36:14 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"Harry Porra e a Novinha Rabuda", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`titulo` = 'Harry Porra e a Novinha Rabuda' ORDER BY `produtos`.`id` ASC LIMIT 1000[0m
+  Rendered compras/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 426ms (Views: 414.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:36:16 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 367ms (Views: 356.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 05:38:00 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered compras/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 415ms (Views: 403.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=Harry+Porra+e+a+Novinha+Rabuda&commit=Buscar" for ::1 at 2019-06-28 05:38:03 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"Harry Porra e a Novinha Rabuda", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`titulo` = 'Harry Porra e a Novinha Rabuda' ORDER BY `produtos`.`id` ASC LIMIT 1000[0m
+  Rendered compras/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 423ms (Views: 410.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:38:05 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 367ms (Views: 355.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/vender" for ::1 at 2019-06-28 05:38:44 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered produtos/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 411ms (Views: 401.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/vender" for ::1 at 2019-06-28 05:38:52 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/Ca/7luNMDRN9DyaIcMIslCxTn4nkr1vSvnCZYuHXTcXyjbZCVG3rGV4eBM9Tr0OssldjYJGnawZcH7FdL+cJg==", "produto"=>{"titulo"=>"kk eae man", "autores"=>"Daniel Orivaldo da Silva", "edicao"=>"23ª", "data_pub"=>"11/11/1111", "isbn"=>"9120931023901", "editora"=>"Fechou"}, "commit"=>"Criar Anúncio"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `produtos` (`titulo`, `autores`, `edicao`, `data_pub`, `isbn`, `editora`, `created_at`, `updated_at`, `user_id`, `visivel`) VALUES ('kk eae man', 'Daniel Orivaldo da Silva', 23, '11/11/1111', '9120931023901', 'Fechou', '2019-06-28 08:38:53', '2019-06-28 08:38:53', 17, 1)[0m
+  [1m[35m (87.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 89.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/produtos_controller.rb:25:in `create'
+Started GET "/vender" for ::1 at 2019-06-28 05:39:36 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (D:/ProjectOne/app/views/produtos/new.html.erb:19: syntax error, unexpected =>
+...e/gif,image/jpeg', required: => true );@output_buffer.safe_a...
+...                               ^):
+  
+app/views/produtos/new.html.erb:19: syntax error, unexpected =>
+Started GET "/vender" for ::1 at 2019-06-28 05:40:04 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (4.0ms)
+  Rendered produtos/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 410ms (Views: 399.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/vender" for ::1 at 2019-06-28 05:40:22 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+YjQOktr89cKvlcJvh5KEireRt9emqtbGB2WcZxdccIztWnue7ViRdUJGYpWjcs5Mva2FHWg1sDSF0SKFa1iUA==", "produto"=>{"titulo"=>"kk eae man", "autores"=>"Daniel Orivaldo da Silva", "edicao"=>"23ª", "data_pub"=>"11/11/1111", "isbn"=>"1902391090239", "editora"=>"Fechou"}, "produtoimagem"=>{"imagem"=>[#<ActionDispatch::Http::UploadedFile:0xd6c90e0 @tempfile=#<Tempfile:C:/Users/CACETI~1/AppData/Local/Temp/RackMultipart20190628-5204-1j3q42e.jpg>, @original_filename="017 - VRWtu0V.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"produtoimagem[imagem][]\"; filename=\"017 - VRWtu0V.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Criar Anúncio"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `produtos` (`titulo`, `autores`, `edicao`, `data_pub`, `isbn`, `editora`, `created_at`, `updated_at`, `user_id`, `visivel`) VALUES ('kk eae man', 'Daniel Orivaldo da Silva', 23, '11/11/1111', '1902391090239', 'Fechou', '2019-06-28 08:40:22', '2019-06-28 08:40:22', 17, 1)[0m
+  [1m[35m (66.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 111 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `produtoimagems` (`produto_id`, `created_at`, `updated_at`, `imagem`) VALUES (111, '2019-06-28 08:40:23', '2019-06-28 08:40:23', '017_-_VRWtu0V.jpg')[0m
+  [1m[35m (165.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 1097ms (ActiveRecord: 233.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:40:23 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 399ms (Views: 386.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:40:25 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (0.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 110[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 111[0m
+  Rendered produtos/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 409ms (Views: 394.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:40:28 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 388ms (Views: 377.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vender" for ::1 at 2019-06-28 05:43:05 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered produtos/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 400ms (Views: 389.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/vender" for ::1 at 2019-06-28 05:43:17 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HzG0/ZkuYxzcB/wEpvdj9tXKnoqhrsm/SFFKxrcYIG703T3Ky/LkhPSLuI26etZKN7KNeQR66Xwb2PZmSCDhfw==", "produto"=>{"titulo"=>"kk eae man", "autores"=>"Daniel Orivaldo da Silva", "edicao"=>"23ª", "data_pub"=>"11/11/1111", "isbn"=>"1234567891234", "editora"=>"Fechou"}, "produtoimagem"=>{"imagem"=>[#<ActionDispatch::Http::UploadedFile:0x3967650 @tempfile=#<Tempfile:C:/Users/CACETI~1/AppData/Local/Temp/RackMultipart20190628-5204-1v1sy1x.jpg>, @original_filename="default.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"produtoimagem[imagem][]\"; filename=\"default.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Criar Anúncio"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `produtos` (`titulo`, `autores`, `edicao`, `data_pub`, `isbn`, `editora`, `created_at`, `updated_at`, `user_id`, `visivel`) VALUES ('kk eae man', 'Daniel Orivaldo da Silva', 23, '11/11/1111', '1234567891234', 'Fechou', '2019-06-28 08:43:17', '2019-06-28 08:43:17', 17, 1)[0m
+  [1m[35m (91.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 112 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `produtoimagems` (`produto_id`, `created_at`, `updated_at`, `imagem`) VALUES (112, '2019-06-28 08:43:18', '2019-06-28 08:43:18', 'default.jpg')[0m
+  [1m[35m (230.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 1116ms (ActiveRecord: 322.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:43:19 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 393ms (Views: 381.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:45:06 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (0.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 110[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 111[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 112[0m
+  Rendered produtos/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 411ms (Views: 397.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/uploads/thumb_default.jpg" for ::1 at 2019-06-28 05:45:06 -0300
+  
+Started GET "/uploads/thumb_017_-_VRWtu0V.jpg" for ::1 at 2019-06-28 05:45:06 -0300
+ActionController::RoutingError (No route matches [GET] "/uploads/thumb_default.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/thumb_017_-_VRWtu0V.jpg"):
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/anuncios" for ::1 at 2019-06-28 05:45:13 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (378.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (1.0ms)
+  [1m[36mProduto Load (2.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 110[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 111[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 112[0m
+  Rendered produtos/index.html.erb within layouts/application (812.0ms)
+Completed 200 OK in 3220ms (Views: 2045.7ms | ActiveRecord: 383.0ms)
+
+
+Started GET "/uploads/thumb_017_-_VRWtu0V.jpg" for ::1 at 2019-06-28 05:45:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/thumb_017_-_VRWtu0V.jpg"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/produto?id=111" for ::1 at 2019-06-28 05:45:23 -0300
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jJlJshnGIyKam9sWzJvtQjvArscj48qJk7YfNBOhxQ1GpPBmKRiysEUslZUkCGxpI+heDAjZtxJZvM3PmlHWnw==", "id"=>"111"}
+  [1m[36mProduto Load (2.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 111 LIMIT 1[0m
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 111 LIMIT 1[0m  [["id", 111], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM `produtos` WHERE `produtos`.`id` = 111[0m
+  [1m[35m (62.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/anuncios
+Completed 302 Found in 105ms (ActiveRecord: 66.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:45:23 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (0.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 110[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 112[0m
+  Rendered produtos/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 403ms (Views: 389.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:45:49 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (1.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 110[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 112[0m
+  Rendered produtos/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 400ms (Views: 386.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:45:51 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 396ms (Views: 385.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:45:52 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (0.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 110[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 112[0m
+  Rendered produtos/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 399ms (Views: 384.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/exit" for ::1 at 2019-06-28 05:46:06 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions" for ::1 at 2019-06-28 05:46:06 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 379ms (Views: 368.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2019-06-28 05:46:11 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gsKMUpWprkUi7U3vzQUD6emRrJawjjPWshL5IyjupNUJZmNgIMAmVEcXt8zkNtevglzjL6tG51C5LxXTvkMhUA==", "user"=>{"email"=>"wsoares@inf.ufsm.br", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE (LOWER(email) = 'wsoares@inf.ufsm.br') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 83ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:46:11 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 413ms (Views: 402.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:46:13 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (1.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 110[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 112[0m
+  Rendered produtos/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 381ms (Views: 366.4ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/produto?id=112" for ::1 at 2019-06-28 05:46:38 -0300
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OKB02+PiQEY58svsJaqai4zA/UOo3BGyk7APHaC4gw/ync0P0zzR1OZFhW/NORuglOgNiIPmbClZut3mKUiQnQ==", "id"=>"112"}
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 112 LIMIT 1[0m
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 112 LIMIT 1[0m  [["id", 112], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM `produtos` WHERE `produtos`.`id` = 112[0m
+  [1m[35m (77.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/anuncios
+Completed 302 Found in 85ms (ActiveRecord: 78.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:46:38 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (0.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 110[0m
+  Rendered produtos/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 396ms (Views: 384.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:46:40 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 375ms (Views: 362.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:46:41 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (0.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 110[0m
+  Rendered produtos/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 388ms (Views: 375.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:49:14 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 392ms (Views: 381.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:49:15 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (0.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  Rendered produtos/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 392ms (Views: 379.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:49:16 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 375ms (Views: 365.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 05:49:30 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered compras/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 395ms (Views: 384.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=kk+eae+man&commit=Buscar" for ::1 at 2019-06-28 05:49:33 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"kk eae man", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`titulo` = 'kk eae man' ORDER BY `produtos`.`id` ASC LIMIT 1000[0m
+  Rendered compras/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 432ms (Views: 420.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:49:35 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 380ms (Views: 367.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 05:52:58 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (24.0ms)
+  Rendered compras/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 453ms (Views: 440.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=Harry+Porra+e+a+Novinha+Rabuda&commit=Buscar" for ::1 at 2019-06-28 05:53:00 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"Harry Porra e a Novinha Rabuda", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`titulo` = 'Harry Porra e a Novinha Rabuda'[0m
+  Rendered compras/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 408ms (Views: 383.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:53:03 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 406ms (Views: 393.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vender" for ::1 at 2019-06-28 05:53:21 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered produtos/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 415ms (Views: 404.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/vender" for ::1 at 2019-06-28 05:53:34 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g4iqrPkmSilvJSQM2IvgJb3pdK36E2mDjxeErbYUpG1oZCObq/rNsUepYIXEBlWZX5FnXl/HSUDcnjgNSSxlfA==", "produto"=>{"titulo"=>"kk eae man", "autores"=>"Daniel Orivaldo da Silva", "edicao"=>"23ª", "data_pub"=>"11/11/1112", "isbn"=>"1902391090239", "editora"=>"Fechou"}, "produtoimagem"=>{"imagem"=>[#<ActionDispatch::Http::UploadedFile:0xb6548f8 @tempfile=#<Tempfile:C:/Users/CACETI~1/AppData/Local/Temp/RackMultipart20190628-5204-9m4x1n.jpg>, @original_filename="55897283_2071985592915184_5622246506976247808_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"produtoimagem[imagem][]\"; filename=\"55897283_2071985592915184_5622246506976247808_n.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Criar Anúncio"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `produtos` (`titulo`, `autores`, `edicao`, `data_pub`, `isbn`, `editora`, `created_at`, `updated_at`, `user_id`, `visivel`) VALUES ('kk eae man', 'Daniel Orivaldo da Silva', 23, '11/11/1112', '1902391090239', 'Fechou', '2019-06-28 08:53:34', '2019-06-28 08:53:34', 17, 1)[0m
+  [1m[35m (93.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 113 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `produtoimagems` (`produto_id`, `created_at`, `updated_at`, `imagem`) VALUES (113, '2019-06-28 08:53:35', '2019-06-28 08:53:35', '55897283_2071985592915184_5622246506976247808_n.jpg')[0m
+  [1m[35m (132.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 1081ms (ActiveRecord: 228.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:53:35 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 436ms (Views: 422.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 05:53:37 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered compras/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 399ms (Views: 388.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=kk+eae+man&commit=Buscar" for ::1 at 2019-06-28 05:53:40 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"kk eae man", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`titulo` = 'kk eae man'[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 113[0m
+  Rendered compras/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 434ms (Views: 419.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:53:57 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (27.0ms)
+  Rendered homes/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 498ms (Views: 484.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 05:53:59 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered compras/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 407ms (Views: 394.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=kk+eae+man&commit=Buscar" for ::1 at 2019-06-28 05:54:04 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"kk eae man", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`titulo` = 'kk eae man'[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 113[0m
+  Rendered compras/index.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 444ms (Views: 416.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:55:02 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (22.0ms)
+  Rendered homes/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 459ms (Views: 446.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/vender" for ::1 at 2019-06-28 05:55:03 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered produtos/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 424ms (Views: 412.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/vender" for ::1 at 2019-06-28 05:55:38 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k9ULPtlLxFO2JvgFVkQn40STEq7FvYkOxXr4rKcRvNJ4OYIJi5dDy56qvIxKyZJfpusBXWBpqc2W80QMWCl9ww==", "produto"=>{"titulo"=>"Harry Pothead", "autores"=>"JK Rola", "edicao"=>"07", "data_pub"=>"21/12/2012", "isbn"=>"1234567891234", "editora"=>"Rocco "}, "produtoimagem"=>{"imagem"=>[#<ActionDispatch::Http::UploadedFile:0xa9d97d8 @tempfile=#<Tempfile:C:/Users/CACETI~1/AppData/Local/Temp/RackMultipart20190628-5204-7qiqha.jpg>, @original_filename="default.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"produtoimagem[imagem][]\"; filename=\"default.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Criar Anúncio"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `produtos` (`titulo`, `autores`, `edicao`, `data_pub`, `isbn`, `editora`, `created_at`, `updated_at`, `user_id`, `visivel`) VALUES ('Harry Pothead', 'JK Rola', 7, '21/12/2012', '1234567891234', 'Rocco ', '2019-06-28 08:55:39', '2019-06-28 08:55:39', 17, 1)[0m
+  [1m[35m (39.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 114 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `produtoimagems` (`produto_id`, `created_at`, `updated_at`, `imagem`) VALUES (114, '2019-06-28 08:55:39', '2019-06-28 08:55:39', 'default.jpg')[0m
+  [1m[35m (83.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 913ms (ActiveRecord: 124.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:55:39 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 426ms (Views: 416.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:55:42 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (0.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 113[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 114[0m
+  Rendered produtos/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 383ms (Views: 371.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:55:44 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 390ms (Views: 380.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 05:55:45 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered compras/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 407ms (Views: 396.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=kk+eae+man&commit=Buscar" for ::1 at 2019-06-28 05:55:47 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"kk eae man", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`titulo` = 'kk eae man'[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 113[0m
+  Rendered compras/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 417ms (Views: 401.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:55:49 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 372ms (Views: 361.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 05:55:50 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered compras/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 410ms (Views: 399.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=Harry+Pothead&commit=Buscar" for ::1 at 2019-06-28 05:55:55 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"Harry Pothead", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`titulo` = 'Harry Pothead'[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 114[0m
+  Rendered compras/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 386ms (Views: 373.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:57:59 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (27.0ms)
+  Rendered homes/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 510ms (Views: 495.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 05:58:00 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered compras/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 403ms (Views: 392.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=kk+eae+man&commit=Buscar" for ::1 at 2019-06-28 05:58:03 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"kk eae man", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  [1m[36mProduto Load (16.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE (titulo LIKE 'kk eae man')[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 113[0m
+  Rendered compras/index.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 481ms (Views: 442.5ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:58:05 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 385ms (Views: 374.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 05:58:07 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered compras/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 365ms (Views: 355.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=Harry+Pot&commit=Buscar" for ::1 at 2019-06-28 05:58:12 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"Harry Pot", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE (titulo LIKE 'Harry Pot')[0m
+  Rendered compras/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 439ms (Views: 425.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:58:14 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 383ms (Views: 371.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 05:58:15 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (1.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 113[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 114[0m
+  Rendered produtos/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 394ms (Views: 380.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:58:18 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 386ms (Views: 376.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 05:58:20 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered compras/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 402ms (Views: 389.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=Harry&commit=Buscar" for ::1 at 2019-06-28 05:58:23 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"Harry", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE (titulo LIKE 'Harry')[0m
+  Rendered compras/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 387ms (Views: 374.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:58:24 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 390ms (Views: 377.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 05:58:25 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered compras/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 394ms (Views: 383.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=Harry+Pothead&commit=Buscar" for ::1 at 2019-06-28 05:58:29 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"Harry Pothead", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE (titulo LIKE 'Harry Pothead')[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 114[0m
+  Rendered compras/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 399ms (Views: 385.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:59:53 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (24.0ms)
+  Rendered homes/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 435ms (Views: 420.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 05:59:54 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered compras/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 413ms (Views: 402.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=Harry&commit=Buscar" for ::1 at 2019-06-28 05:59:57 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"Harry", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE (titulo LIKE '%Harry%')[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 114[0m
+  Rendered compras/index.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 432ms (Views: 409.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 05:59:58 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered homes/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 386ms (Views: 375.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 06:00:00 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered compras/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 420ms (Views: 408.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=Harry+Pot&commit=Buscar" for ::1 at 2019-06-28 06:00:03 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"Harry Pot", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE (titulo LIKE '%Harry Pot%')[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 114[0m
+  Rendered compras/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 389ms (Views: 377.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 06:00:05 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 418ms (Views: 407.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 06:00:06 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered compras/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 383ms (Views: 373.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=a&commit=Buscar" for ::1 at 2019-06-28 06:00:09 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"a", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE (titulo LIKE '%a%')[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 113[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 114[0m
+  Rendered compras/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 424ms (Views: 410.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 06:00:11 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 369ms (Views: 358.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/comprar" for ::1 at 2019-06-28 06:00:12 -0300
+Processing by ComprasController#new as HTML
+  Rendering compras/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  Rendered compras/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 403ms (Views: 392.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/busca?utf8=%E2%9C%93&tituloBusc=kk&commit=Buscar" for ::1 at 2019-06-28 06:00:15 -0300
+Processing by ComprasController#index as HTML
+  Parameters: {"utf8"=>"✓", "tituloBusc"=>"kk", "commit"=>"Buscar"}
+  Rendering compras/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (2.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE (titulo LIKE '%kk%')[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 113[0m
+  Rendered compras/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 386ms (Views: 374.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 06:00:17 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 393ms (Views: 380.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 06:00:22 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (1.0ms)
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 113[0m
+  [1m[36mProdutoimagem Load (1.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 114[0m
+  Rendered produtos/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 414ms (Views: 399.1ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/produto?id=113" for ::1 at 2019-06-28 06:00:25 -0300
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RY467RmMbgg8ffBVYJcbWRNseeLxgW4go7df8UPTDGmPs4M5KVL/muPKvtaIBJpyC0SJKdq7E7tpvY0KyiMf+w==", "id"=>"113"}
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 113 LIMIT 1[0m
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 113 LIMIT 1[0m  [["id", 113], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM `produtos` WHERE `produtos`.`id` = 113[0m
+  [1m[35m (56.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/anuncios
+Completed 302 Found in 64ms (ActiveRecord: 57.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 06:00:25 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (1.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  [1m[36mProdutoimagem Load (0.0ms)[0m  [1m[34mSELECT `produtoimagems`.* FROM `produtoimagems` WHERE `produtoimagems`.`produto_id` = 114[0m
+  Rendered produtos/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 403ms (Views: 392.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/produto?id=114" for ::1 at 2019-06-28 06:00:27 -0300
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GKk4Se+R0eRkpfJGytnHuCWeVHCCyoAQpKRRzgXCJrjSlIGd309AdrsSvMUiSkaTPbaku6nw/YturoM1jDI1Kg==", "id"=>"114"}
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 114 LIMIT 1[0m
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  `produtos`.* FROM `produtos` WHERE `produtos`.`id` = 114 LIMIT 1[0m  [["id", 114], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM `produtos` WHERE `produtos`.`id` = 114[0m
+  [1m[35m (37.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/anuncios
+Completed 302 Found in 46ms (ActiveRecord: 38.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 06:00:27 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (1.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  Rendered produtos/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 410ms (Views: 395.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2019-06-28 06:00:29 -0300
+Processing by HomesController#new as HTML
+  Rendering homes/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendered navbar/_navbar.html.erb (3.0ms)
+  Rendered homes/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 376ms (Views: 365.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/anuncios" for ::1 at 2019-06-28 06:00:30 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (1.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT `produtos`.* FROM `produtos` WHERE `produtos`.`user_id` = 17[0m
+  Rendered produtos/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 393ms (Views: 381.0ms | ActiveRecord: 0.0ms)
+
+
