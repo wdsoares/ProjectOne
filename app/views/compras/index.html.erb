@@ -33,8 +33,12 @@
                                     <td style="color:white;"><%= produto.titulo %></td>
                                     <td style="color:white;"><%= produto.autores %></td>
                                     <td style="color:white;"><%= produto.data_pub %></td>
-                                    <td><button type="button" class="btn btn-sm btn-primary">Comprar</button>
-                                        <button type="button" class="btn btn-sm btn-warning">Reportar</button>
+                                    <td><button class="btn btn-sm btn-danger-home">
+                                            <%= link_to 'Tenho interesse', 
+                                            {:controller=>:compras,:action=>:nova, :idproduto=>produto.id}, 
+                                            method: :put, data: { confirm: 'Você tem certeza disso?' }, style: 'color: #FFFFFF;' %>
+                                        </button>
+                                        <button type="button" style="color:white;"class="btn btn-sm btn-warning">Denunciar</button>
                                     </td>
                                 </tr>
                             <% end %>

@@ -10,7 +10,7 @@
         </div>
         <div class="panel-body">
           <%= bootstrap_form_for(:produto, :html => {:multipart => true}) do |f| %>
-            <%= f.text_field :titulo,class: "input-lg", maxlength: "100", label_class:"white-text", label: "Título",:required => true %>
+            <%= f.text_field :titulo, class: "input-lg", maxlength: "100", label_class:"white-text", label: "Título", :required => true %>
             <%= f.text_field :autores, class: "input-lg", maxlength: "100", label:"Autores", label_class:"white-text"%>
             <%= f.text_field :edicao, class: "input-lg", maxlength: "11", label:"Edição", label_class:"white-text" %>
             <%= f.text_field :data_pub, id: "data_pub", class:"input-lg", maxlength: "10", label:"Data de publicação", label_class:"white-text" %>

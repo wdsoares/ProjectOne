@@ -1,6 +1,7 @@
 class ProdutosController < ApplicationController
   before_action :set_produto, only: [:show, :edit, :update, :destroy]
   require "mini_magick"
+  
   def new
     if (cookies[:user_id].blank?)
       redirect_to sessions_path

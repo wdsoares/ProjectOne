@@ -1,16 +1,28 @@
-<nav class="navbar">
-  <a class="navbar-brand" href="/home" style="color: white; background-color: transparent;font-size: 14px;">Olá, <%= current_user.nome %></a>
-  <form class="form-inline">
-    <div style="padding-left: 10px;">
-      <a class="btn btn-danger3" href="/comprar" role="button">
-        Comprar
-      </a>
-      <a class="btn btn-danger3" href="/vender" role="button">
-        Vender
-      </a>
-      <a class="btn btn-danger-exit" style="color:white;" href="/exit" role="button">
-        Sair
-      </a>
+<nav class="navbar navbar-expand-md">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" style="color: white; background-color: transparent;" href="/comprar">Comprar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white; background-color: transparent;" href="/vender">Vender</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white; background-color: transparent;" href="/anuncios">Meus Anúncios</a>
+            </li>
+        </ul>
     </div>
-  </form>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" style="color: white; background-color: transparent;font-size: 30px; font-family: Harabara Mais, Geneva, sans-serif;" href="/home">Sebo Academy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" style="color: white; background-color: transparent;" href="/exit">Sair</a>
+            </li>
+        </ul>
+    </div>
 </nav>

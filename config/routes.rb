@@ -20,5 +20,6 @@ Rails.application.routes.draw do
   post "forgotpwd" => "forgotpwds#create"
   get "comprar" => "compras#new"
   get "busca" => "compras#index"
+  put "comprar" => "compras#nova"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
