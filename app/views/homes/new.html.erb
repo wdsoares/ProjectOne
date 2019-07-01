@@ -1,25 +1,27 @@
 <%= render "navbar/navbar" %>
 <div class="container">
 	<div class="row justify-content-center">
-		<div class="col-sm-5 col-xs-auto">
-			<div class="panel2 panel-default" style="margin-top: 100px;">
-				<div class="row justify-content-center">
-					<div class="col-xs-auto">
-						<%= link_to "Vender/Emprestar", vender_path, style:"width: 340px; margin-top: 50px;", class:"btn btn-lg btn-danger-home active" %>
+		<div class="col-sm-4">
+			<div class="panel2 panel-default" style="margin-top: 125px;">
+				<div class="row" style="margin-left: 1%; margin-right: 1%;">
+					<div class="col-sm-12" style="margin-top: 4%;">
+						<%= link_to "Vender/Emprestar", vender_path, class:"btn btn-block btn-lg btn-danger-home active" %>
 					</div>  
 				</div>
 				<br>
-				<div class="row justify-content-center">
-					<div class="col-xs-auto">
-						<%= link_to "Comprar/Solicitar empréstimo", comprar_path, style:"margin-bottom: 25px; width: 340px;", class:"btn btn-lg btn-danger-home active" %>
+				<div class="row" style="margin-left: 1%; margin-right: 1%;">
+					<div class="col-sm-12">
+						<%= link_to "Comprar/Solicitar empréstimo", comprar_path,  class:"btn btn-block btn-lg btn-danger-home active" %>
 					</div>
 				</div>
-				<div class="row justify-content-center">
-					<div class="col-xs-auto">
-						<%= link_to "Meus anúncios", anuncios_path, style:"margin-bottom: 50px; width: 340px;", class:"btn btn-lg btn-danger-home active" %>
+				<br>
+				<div class="row" style="margin-left: 1%; margin-right: 1%;">
+					<div class="col-sm-12" style="margin-bottom: 4%;">
+						<%= link_to "Meus anúncios", anuncios_path, class:"btn btn-block btn-lg btn-danger-home active" %>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<%= render "footer/footer2" %>

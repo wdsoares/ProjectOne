@@ -5,18 +5,18 @@
       <div class="panel panel-default">
         <div class="panel-heading align-items-center justify-content-center">
             <div class="row justify-content-center">
-                <h2 style="color:#ffffff; font-family: Harabara Mais, Helvetica, sans-serif;">Anunciar</h2>
+                <h2 style="columns: #000000;; font-family: Harabara Mais, Helvetica, sans-serif;">Anunciar</h2>
             </div>
         </div>
         <div class="panel-body">
-          <%= bootstrap_form_for(:produto, :html => {:multipart => true}) do |f| %>
-            <%= f.text_field :titulo, class: "input-lg", maxlength: "100", label_class:"white-text", label: "Título", :required => true %>
-            <%= f.text_field :autores, class: "input-lg", maxlength: "100", label:"Autores", label_class:"white-text"%>
-            <%= f.text_field :edicao, class: "input-lg", maxlength: "11", label:"Edição", label_class:"white-text" %>
-            <%= f.text_field :data_pub, id: "data_pub", class:"input-lg", maxlength: "10", label:"Data de publicação", label_class:"white-text" %>
-            <%= f.text_field :isbn, label:"ISBN", maxlength: "13", label_class:"white-text", minlength: "13", inline_errors: true ,class: "input-lg" %>
-            <%= f.text_field :editora, label_class:"white-text", maxlength: "40", label:"Editora" %>
-            <%= f.file_field :imagem, label_class:"white-text", label: "Imagens", name: "produtoimagem[imagem][]", :multiple => true, accept: 'image/png,image/gif,image/jpeg', :required => true %>
+          <%= bootstrap_form_for(:produto, :html => {:multipart => false}) do |f| %>
+            <%= f.text_field :titulo, class: "input-lg", maxlength: "100", label: "Título", :required => true, :placeholder => "Sistemas Operacionais Modernos"%>
+            <%= f.text_field :autores, class: "input-lg", maxlength: "100", label:"Autores", :placeholder => "A. Tanenbaum" %>
+            <%= f.text_field :edicao, class: "input-lg", maxlength: "11", label:"Edição", :placeholder => "4ª" %>
+            <%= f.text_field :data_pub, id: "data_pub", class:"input-lg", maxlength: "10", label:"Data de publicação", :placeholder => "01/01/2001" %>
+            <%= f.text_field :isbn, label:"ISBN", maxlength: "13", minlength: "13", inline_errors: true , class: "input-lg", :placeholder => "1234567891234" %>
+            <%= f.text_field :editora, maxlength: "40", label:"Editora", :placeholder => "Editora..."  %>
+            <%= f.file_field :imagem, label: "Imagens", name: "produtoimagem[imagem][]", :multiple => false, accept: 'image/png,image/gif,image/jpeg', :required => true %>
             <%= f.submit "Criar Anúncio", class: "btn btn-block btn-lg btn-danger-home active" %>
             <%= link_to "Voltar", home_path, class:"btn btn-block btn-sm btn-light" %><br>
             <p id="notice"><%= notice %></p>
@@ -25,4 +25,6 @@
       </div>
     </div>
   </div>
+  <br>
 </div>
+<%= render "footer/footer" %>

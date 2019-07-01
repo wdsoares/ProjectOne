@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190628082750) do
+ActiveRecord::Schema.define(version: 20190701102445) do
 
   create_table "compras", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "created_at", null: false
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 20190628082750) do
     t.datetime "updated_at", null: false
     t.integer "user_id", null: false
     t.integer "visivel", null: false
-    t.string "produtoimagem"
+    t.string "imagem"
   end
 
   create_table "users", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -83,21 +83,14 @@ ActiveRecord::Schema.define(version: 20190628082750) do
   end
 
   create_table "vendas", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "idcomprador", null: false
-    t.integer "idvendedor", null: false
-    t.integer "idproduto", null: false
-    t.index ["idcomprador"], name: "idcomprador_idx"
-    t.index ["idproduto"], name: "idproduto_idx"
-    t.index ["idvendedor"], name: "idvendedor_idx"
+    t.integer "idcomprador"
+    t.integer "idvendedor"
+    t.integer "idproduto"
+    t.integer "estado"
   end
 
   add_foreign_key "denuncia", "produtos", column: "idAnuncio", name: "idAnuncio"
   add_foreign_key "denuncia", "users", column: "id_delator", name: "id_delator"
   add_foreign_key "produtoimagems", "produtos", name: "produto_id", on_delete: :cascade
   add_foreign_key "users", "enderecos", column: "enderecoID", name: "enderecoID"
-  add_foreign_key "vendas", "produtos", column: "idproduto", name: "idproduto"
-  add_foreign_key "vendas", "users", column: "idcomprador", name: "idcomprador"
-  add_foreign_key "vendas", "users", column: "idvendedor", name: "idvendedor"
 end

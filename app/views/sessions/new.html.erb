@@ -1,17 +1,21 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-sm-offset-8 col-sm-6" style="margin-top: 100px">
+    <div class="col-sm-offset-8 col-sm-6" style="margin-top: 30px">
       <div class="panel panel-default">
         <div class="panel-heading text-center">
-          <h2 style="color:#ffffff; font-family: Harabara Mais, Geneva, sans-serif;">Iniciar nova sessão</h2>
-        </div>
+          <%= image_tag "logo.png", size: "400x154" %>
+        </div><br>
+        <div class="panel-heading text-center">
+            <h2 style="font-family: Harabara Mais, Geneva, sans-serif;">Iniciar nova sessão</h2>
+          </div>
           <div class="panel-body">
             <%= bootstrap_form_for(:user, label_errors: true) do |f| %>
               <%= f.email_field :email, label:"Email", label_as_placeholder: "true", label_class:"white-text", class: "input-lg" %>
               <%= f.password_field :password,label:"Senha", label_as_placeholder: "true", label_class:"white-text", class: "input-lg" %>
-              <%= f.submit "Login", class: "btn btn-lg btn-block btn-danger2 active" %>
+              <%= f.submit "Login", class: "btn btn-lg btn-block btn-danger-home active" %>
               <%= link_to "Cadastrar", signup_path, class:"btn btn-block btn-sm btn-light" %>
-              <%= link_to "Esqueceu sua senha?", forgotpwd_path, class:"btn", style:"color:white;" %>
+              <br>
+              <%= link_to "Esqueceu sua senha?", forgotpwd_path, class:"btn btn-sm btn-light" %>
             <% end %>
             <p id="alert" style="color: white;"><%= alert %></p>
         </div>
@@ -19,3 +23,4 @@
     </div>
   </div>
 </div>
+<%= render 'footer/footer2' %>

@@ -1,11 +1,12 @@
 <%= render "navbar/navbar" %>
-<div class="container-fluid">
-  <div class="row align-items-center justify-content-center vertical-center">
-    <div class="col-sm-offset-8 col-sm-8" style="margin-top: 20px">
-      <div class="panel panel-default">
+<div class="container-fluid h-100">
+  <br><br><br><br>
+  <div class="row justify-content-center h-100">
+    <div class="col-sm-6" style="margin-top: auto; margin-bottom:auto;">
+      <div class="panel panel-default" style="display:table; position:absolute; width: 100%; height: auto;">
         <div class="panel-body">
           <%= bootstrap_form_tag url: '/busca', method: :get do |f| %>
-          <%= f.text_field :tituloBusc, name: "tituloBusc", label: "Título da publicação", label_class: "white-text", placeholder: 'Ex: Sistemas Operacionais Modernos - A. Tanenbaum' %>
+          <%= f.text_field :tituloBusc, name: "tituloBusc", label: "Título da publicação", placeholder: 'O que você procura?' %>
           <%= f.submit "Buscar", class: "btn btn-block btn-lg btn-danger-home active" %>
         <% end %>
         <p id="notice"><%= notice %></p>
@@ -14,3 +15,5 @@
     </div>
   </div>
 </div>
+<br>
+<%= render "footer/footer2" %>

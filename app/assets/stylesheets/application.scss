@@ -19,7 +19,7 @@
  @import 'bootstrap';
 
  body { 
-    background-image: image-url('bg2.jpg'); 
+    background-image: image-url('cover-bubble-dark.jpg'); 
     background-size: cover;
   }
   .panel{
@@ -38,19 +38,19 @@
     border-bottom-right-radius: 10px;
     }
   .panel-default{
-    background-color: rgba(255, 255, 255, 0.116);
+    background-color: rgba(1, 102, 43, 0.2);
     }
 
   .panel-default > .panel-heading{
-    background-color: rgba(0,0,0,0.2); 
+    background-color: rgba(109, 109, 109, 0.185); 
     padding: 10px;
-    color: white;
+    color: black;
     width: 100% !important;
     }
 
   .navbar {
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(1, 102, 43, 0.2);
   }
   .navbar-brand {
       font-size: 10px;
@@ -64,59 +64,47 @@
     font-weight: normal;
     font-style: normal;
  }
- 
- .btn-danger2 {
-  background: #fc0000;
-  background-image: -webkit-linear-gradient(top, rgba(255, 0, 0, 0.767), rgba(5, 0, 0, 0.158)) !important;
-  color: white !important;
-  border: 1px solid #fc0000 !important;
- }
- 
- .btn-danger2:hover{
-    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-    -webkit-box-shadow: inset 0px -10px 45px -10px rgba(0,0,0,0.57) !important;
-    -moz-box-shadow: inset 0px 5px 40px -10px rgba(0,0,0,0.57) !important;
-    transition: all 0.4s ease 0s;
- }
 
  .btn-danger-home {
-  background: #fc0000;
-  background-image: -webkit-linear-gradient(top, rgba(255, 0, 0, 0.767), rgba(5, 0, 0, 0.158)) !important;
+  background: #018d47;
+  background-image: -webkit-linear-gradient(top, rgb(7, 197, 118), rgba(19, 46, 0, 0.425)) !important;
   color: white !important;
-  border: 1px solid #c90505 !important;
+  border: 1px solid #088833 !important;
   text-align: center;
   font-size: 30px;
  }
  
  .btn-danger-home:hover{
     text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57) !important;
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57) !important;
+    -webkit-box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.856) !important;
+    -moz-box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.856)  !important;
     transition: all 0.4s ease 0s;
  }
 
- .btn-danger3 {
-  background-color: rgba(255, 255, 255, 0.952) !important;
-  color: rgb(255, 59, 59) !important;
-  border: 1px solid #fc0000 !important;
- }
-
- .btn-danger3:hover{
-  text-shadow: 0px 0px 6px rgba(255, 255, 255,1);
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  transition: all 0.4s ease 0s;
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(1, 102, 43, 0.2);
+  text-align: center;
 }
 
- .btn-danger-exit {
-  background-color: rgba(29, 15, 15, 0.411) !important;
-  color: rgb(255, 255, 255) !important;
-  border: 1px solid #fc0000 !important;
- }
- .btn-danger-exit:hover{
-  background: rgba(255, 0, 0, 0.747) !important;
-  text-shadow: 0px 0px 6px rgb(0, 0, 0);
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  transition: all 0.4s ease 0s;
+.footer2 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(1, 102, 43, 0.2);
+  text-align: center;
 }
+
+.btn-fg {
+  background: #fcfcfc;
+  background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgba(255, 255, 255, 0.425)) !important;
+  color: black !important;
+  text-align: center;
+  font-size: 30px;
+ }
+ 
+

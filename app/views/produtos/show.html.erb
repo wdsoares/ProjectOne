@@ -1,0 +1,36 @@
+<%= render "navbar/navbar"%>
+<br><br><br><br>
+<div class="container-fluid">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-md-10 center-block">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-4">
+                    <%= image_tag(@produtoimagem.imagem.mid.url) %>
+                </div>
+                <div class="col-md-8">
+                    <div class="panel2 panel-default">
+                        <div class="panel-body">
+                            <p><strong>Título do anúncio: </strong><%= @produto.titulo %></p>
+                            <p><strong>Interessado: </strong><%= @comprador.nome %></p>
+                            <p><strong>e-Mail: </strong><%= @comprador.email %></p>
+                            <p><strong>Telefone: </strong><%= @comprador.zap %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 center-block">
+            <div class="btn-group btn-group-vertical btn-group-lg" role="group">
+                <button class="btn btn-danger-home" type="button">
+                    Finalizar Venda
+                </button> 
+                <br>
+                <button class="btn btn-danger-home" type="button">
+                    Cancelar Venda
+                </button> 
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<%= render "footer/footer" %>

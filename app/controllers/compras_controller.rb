@@ -8,11 +8,11 @@ class ComprasController < ApplicationController
     @comprador = cookies.signed[:user_id]
     prod = Produto.where('id = ?', params[:idproduto]).take
     vendedor = prod.user_id
-    sql = "INSERT INTO vendas(idcomprador,idvendedor,idproduto) VALUES (#{@comprador}, #{vendedor},#{params[:idproduto]})"
+    sql = "INSERT INTO vendas(idcomprador,idvendedor,idproduto, estado) VALUES (#{@comprador}, #{vendedor},#{params[:idproduto]},0)"
     results = ActiveRecord::Base.connection.execute(sql)
     sql2 = "UPDATE produtos SET visivel = 0 WHERE id = #{params[:idproduto]}"
     results = ActiveRecord::Base.connection.execute(sql2)
-    render :index
+    render :new
   end
 
   private

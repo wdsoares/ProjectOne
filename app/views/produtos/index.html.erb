@@ -2,28 +2,28 @@
 <div class="container-fluid">
 	<div class="row justify-content-center">
 		<div class="col-md-12">
-        <h2 style="color:white; font-family: Harabara Mais, Helvetica, sans-serif; margin-top: 20px;">Meus Anúncios</h2>
+        <h2 style="color:black; font-family: Harabara Mais, Helvetica, sans-serif; margin-top: 20px;">Meus Anúncios</h2>
             <div class="panel panel-default" style="margin-top: 25px;">
                 <div class = "panel-body">
                     <table class="table table-striped table-hover table-sm">
                         <thead>
                             <tr>
-                                <th style = "color: white;">
+                                <th style = "color: black;">
                                     <%= image_tag "camera.png", size: "25x20", style: "margin-left: 35px;"  %>
                                 </th>
-                                <th style = "color: white;">
+                                <th style = "color: black;">
                                     Título
                                 </th>
-                                <th style = "color: white;">
+                                <th style = "color: black;">
                                     Autores
                                 </th>
-                                <th style = "color: white;">
+                                <th style = "color: black;">
                                     Data Publicação
                                 </th>
-                                <th style = "color: white;">
+                                <th style = "color: black;">
                                     Editora
                                 </th>
-                                <th style = "color: white;">
+                                <th style = "color: black;">
                                     Ações
                                 </th>
                             </tr>
@@ -32,65 +32,68 @@
                             <% @produto.each do |produto| %>   
                             <% Produtoimagem.where(:produto_id => produto.id).find do |image| %>
                             <tr>
-                                    <td style="color:white;"><%= image_tag(image.imagem.thumb.url) %></td>
-                                    <td style="color:white;"><%= produto.titulo %></td>
-                                    <td style="color:white;"><%= produto.autores %></td>
-                                    <td style="color:white;"><%= produto.data_pub %></td>
-                                    <td style="color:white;"><%= produto.editora %></td>
-                                    <td style="color:white;"><button class="btn btn-sm btn-danger">
+                                    <td style="color:black;"><%= image_tag(image.imagem.thumb.url) %></td>
+                                    <td style="color:black;"><%= produto.titulo %></td>
+                                    <td style="color:black;"><%= produto.autores %></td>
+                                    <td style="color:black;"><%= produto.data_pub %></td>
+                                    <td style="color:black;"><%= produto.editora %></td>
+                                    <td style="color:black;">
                                         <%= link_to 'Excluir Publicação', 
                                         {:controller=>:produtos,:action=>:destroy, :id=>produto}, 
-                                        method: :delete, data: { confirm: 'Você tem certeza disso?' }, style: 'color: #FFFFFF;' %>
-                                    </button></td>
+                                        method: :delete, data: { confirm: 'Você tem certeza disso?' }, class: "btn btn-sm btn-danger-home", style: 'color: #FFFFFF;' %>
+                                    </td>
                                 </tr>
                             <% end %>
                             <% end %>
                         </tbody>
                     </table>
-                    <p id="notice"><%= notice %></p>
-                    <%= link_to "Voltar", home_path, class:"btn btn-sm btn-danger-home active" %>
                 </div>
             </div>
-            <h2 style="color:white; font-family: Harabara Mais, Helvetica, sans-serif; margin-top: 20px;">Anúncios pausados</h2>
+            <h2 style="color:black; font-family: Harabara Mais, Helvetica, sans-serif; margin-top: 20px;">Anúncios pausados</h2>
             <div class="panel panel-default" style="margin-top: 25px;">
                     <div class = "panel-body">
                         <table class="table table-striped table-hover table-sm">
                             <thead>
                                 <tr>
-                                    <th style = "color: white;">
+                                    <th style = "color: black;">
                                         <%= image_tag "camera.png", size: "25x20", style: "margin-left: 35px;"  %>
                                     </th>
-                                    <th style = "color: white;">
+                                    <th style = "color: black;">
                                         Título
                                     </th>
-                                    <th style = "color: white;">
+                                    <th style = "color: black;">
                                         Autores
                                     </th>
-                                    <th style = "color: white;">
+                                    <th style = "color: black;">
                                         Data Publicação
                                     </th>
-                                    <th style = "color: white;">
+                                    <th style = "color: black;">
                                         Editora
                                     </th>
-                                    <th style = "color: white;">
+                                    <th style = "color: black;">
                                         Ações
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <% Produto.where(:user_id => cookies[:user_id], :visivel => "0").find do |produto| %>   
+                                <% Produto.where(:user_id => cookies.signed[:user_id], :visivel => "0").find do |produto| %>   
                                 <% Produtoimagem.where(:produto_id => produto.id).find do |image| %>
                                 <tr>
-                                        <td style="color:white;"><%= image_tag(image.imagem.thumb.url) %></td>
-                                        <td style="color:white;"><%= produto.titulo %></td>
-                                        <td style="color:white;"><%= produto.autores %></td>
-                                        <td style="color:white;"><%= produto.data_pub %></td>
-                                        <td style="color:white;"><%= produto.editora %></td>
-                                        <td style="color:white;"><button class="btn btn-sm btn-danger">
+                                        <td style="color:black;"><%= image_tag(image.imagem.thumb.url) %></td>
+                                        <td style="color:black;"><%= produto.titulo %></td>
+                                        <td style="color:black;"><%= produto.autores %></td>
+                                        <td style="color:black;"><%= produto.data_pub %></td>
+                                        <td style="color:black;"><%= produto.editora %></td>
+                                        <td style="color:black;">
+                                            <%= link_to 'Mais', 
+                                            {:controller=>:produtos,:action=>:show, :id=>produto.id}, 
+                                            method: :get, class: "btn btn-sm btn-danger-home active", style: 'color: #FFFFFF;' %>
+
                                             <%= link_to 'Excluir Publicação', 
                                             {:controller=>:produtos,:action=>:destroy, :id=>produto}, 
-                                            method: :delete, data: { confirm: 'Você tem certeza disso?' }, style: 'color: #FFFFFF;' %>
-                                        </button></td>
+                                            method: :delete, data: { confirm: 'Você tem certeza disso?' }, class: "btn btn-sm btn-danger-home active", style: 'color: #FFFFFF;' %>
+
+                                    </td>
                                     </tr>
                                 <% end %>
                                 <% end %>
@@ -101,5 +104,7 @@
                     </div>
                 </div>
 		</div>
-	</div>
+    </div>
+    <br>
 </div>
+<%= render "footer/footer2" %>
