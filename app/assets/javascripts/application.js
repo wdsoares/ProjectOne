@@ -25,6 +25,7 @@ $(document).on('turbolinks:load', function() {
     jQuery(function($){
         $('#zap').inputmask('(99) 9999[9]-9999');
         $('#data_pub').inputmask('dd/mm/yyyy');
+        $('#cep').inputmask('99999-999');
      });
 });
 

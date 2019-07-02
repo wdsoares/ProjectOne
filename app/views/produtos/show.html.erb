@@ -2,7 +2,7 @@
 <br><br><br><br>
 <div class="container-fluid">
     <div class="row align-items-center justify-content-center">
-        <div class="col-md-10 center-block">
+        <div class="col-md-8 center-block">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-4">
                     <%= image_tag(@produtoimagem.imagem.mid.url) %>
@@ -19,18 +19,19 @@
                 </div>
             </div>
         </div>
+        
         <div class="col-md-2 center-block">
             <div class="btn-group btn-group-vertical btn-group-lg" role="group">
-                <button class="btn btn-danger-home" type="button">
-                    Finalizar Venda
-                </button> 
+                <%= link_to 'Finalizar Venda', 
+                {:controller=>:produtos,:action=>:edit, :id=> @produto.id, :status => '1'}, 
+                method: :post, data: { confirm: 'Você tem certeza disso?' }, class: "btn btn-sm btn-danger-home active", style: 'color: #FFFFFF;' %> 
                 <br>
-                <button class="btn btn-danger-home" type="button">
-                    Cancelar Venda
-                </button> 
+                <%= link_to 'Cancelar Venda', 
+                    {:controller=>:produtos,:action=>:edit, :id=> @produto.id, :status => '0'}, 
+                    method: :post, data: { confirm: 'Você tem certeza disso?' }, class: "btn btn-sm btn-danger-home active", style: 'color: #FFFFFF;' %>
             </div>
         </div>
     </div>
 </div>
 <br>
-<%= render "footer/footer" %>
+<%= render "footer/footer2" %>

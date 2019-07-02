@@ -3,13 +3,29 @@ class ProdutosController < ApplicationController
   require "mini_magick"
   
   def new
-    if (cookies[:user_id].blank?)
+    if cookies[:user_id].blank?
       redirect_to sessions_path
     else
 
     end
   end
-
+  
+  def edit
+    if params[:status] == "0"
+      sql2 = "UPDATE produtos SET visivel = 1 WHERE id = #{params[:id]}"
+      results = ActiveRecord::Base.connection.execute(sql2)
+      sql = "DELETE FROM vendas WHERE idproduto = #{params[:id]}"
+      result = ActiveRecord::Base.connection.execute(sql)
+    
+    elsif params[:status] == "1"
+      sql3 = "UPDATE produtos SET visivel = 2 WHERE id = #{params[:id]}"
+      result2 = ActiveRecord::Base.connection.execute(sql3)
+      sql4 = "UPDATE vendas SET estado = 1 WHERE idproduto = #{params[:id]}"
+      result3 = ActiveRecord::Base.connection.execute(sql4)
+    end
+    redirect_to anuncios_path
+  end
+  
   def show
 
     @produtoimagem = Produtoimagem.where(:produto_id => params[:id]).take

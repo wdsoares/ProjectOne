@@ -18,7 +18,7 @@
                                     Autores
                                 </th>
                                 <th style = "color: black;">
-                                    Data Publicação
+                                    Data de Publicação
                                 </th>
                                 <th style = "color: black;">
                                     Ações
@@ -29,16 +29,17 @@
                             <% @produto.each do |produto| %>   
                             <% Produtoimagem.where(:produto_id => produto.id).find do |image| %>
                             <tr>
-                                    <td style="color:black;"><%= image_tag(image.imagem.thumb.url) %></td>
-                                    <td style="color:black;"><%= produto.titulo %></td>
-                                    <td style="color:black;"><%= produto.autores %></td>
-                                    <td style="color:black;"><%= produto.data_pub %></td>
-                                    <td>
+                                    <td style="width: 20%; word-wrap: break-word;"><%= image_tag(image.imagem.thumb.url) %></td>
+                                    <td style="width: 30%; word-wrap: break-word;"><%= produto.titulo %></td>
+                                    <td style="width: 15%; word-wrap: break-word;"><%= produto.autores %></td>
+                                    <td style="width: 10%; word-wrap: break-word;"><%= produto.data_pub %></td>
+                                    <td style="width: 10%; word-wrap: break-word;">
                                         <%= link_to 'Tenho interesse', 
                                         {:controller=>:compras,:action=>:nova, :idproduto=>produto.id}, 
-                                        method: :put, data: { confirm: 'Você tem certeza disso?' }, class: "btn btn-sm btn-danger-home", style: 'color: #FFFFFF;', :remote => true %>
-
-                                        <button type="button" style="color:black;"class="btn btn-sm btn-danger-home">Denunciar</button>
+                                        method: :put, data: { confirm: 'Você tem certeza disso?' }, class: "btn btn-sm btn-block btn-danger-home", style: 'color: #FFFFFF;', :remote => true %>
+                                        <br>
+                                        <%= link_to 'Denunciar publicação', {:controller=>:denuncia, :action => :new, :id =>produto.id}, 
+                                        method: :get, data: { confirm: 'Você tem certeza disso?' }, class: "btn btn-sm btn-block btn-danger-home", style: 'color: #FFFFFF;' %>
                                     </td>
                                 </tr>
                             <% end %>

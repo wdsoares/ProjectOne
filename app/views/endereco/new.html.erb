@@ -3,17 +3,17 @@
     <div class="col-sm-offset-6 col-sm-12 row align-items-center justify-content-center" style="margin-top: 20px">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h2 style="color:#ffffff; font-family: Harabara Mais, Helvetica, sans-serif;">Cadastre seu endereço</h2>
+          <h2 style="font-family: Harabara Mais, Helvetica, sans-serif;">Cadastre seu endereço</h2>
         </div>
         <div class="panel-body">
           <%= bootstrap_form_for(:endereco, label_col: "col-sm-12") do |f| %>
-            <%= f.text_field :rua,class: "input-lg", label_class:"white-text", label: "Rua",:required => true,placeholder: "Rua 7 de Setembro" %>
-            <%= f.text_field :numero, class: "input-lg", label_class:"white-text", label:"Numero", :required => true, placeholder: "1000" %>
-            <%= f.text_field :complemento, class: "input-lg", label_class:"white-text", label:"Complemento", placeholder: "Bloco A", :required => true %>
-            <%= f.text_field :cep, class:"input-lg", label_class:"white-text", label:"CEP",:required => true, placeholder: "99999-999" %>
-            <%= f.text_field :bairro, class:"input-lg", label_class:"white-text", label:"Bairro",:required => true, placeholder: "Bairro" %>
-            <%= f.text_field :cidade, class:"input-lg", label_class:"white-text", label:"Cidade",:required => true, placeholder: "Santa Maria" %>
-            <%= f.submit "Cadastrar", class: "btn btn-block btn-lg btn-danger2 active" %>
+            <%= f.text_field :rua,class: "input-lg", label: "Rua",:required => true,placeholder: "Rua 7 de Setembro" %>
+            <%= f.text_field :numero, class: "input-lg", label:"Numero", :required => true, placeholder: "1000" %>
+            <%= f.text_field :complemento, class: "input-lg", label:"Complemento", placeholder: "Bloco A", :required => true %>
+            <%= f.text_field :cep, class:"input-lg", label:"CEP", id: "cep",:required => true, placeholder: "99999-999" %>
+            <%= f.text_field :bairro, class:"input-lg", label:"Bairro",:required => true, placeholder: "Bairro" %>
+            <%= f.text_field :cidade, class:"input-lg", label:"Cidade",:required => true, placeholder: "Santa Maria" %>
+            <%= f.submit "Cadastrar", class: "btn btn-block btn-lg btn-danger-home active" %>
             <%= link_to "Voltar", sessions_path, class:"btn btn-block btn-sm btn-light" %><br>
             <p id="notice"><%= notice %></p>
           <% end %> 

@@ -1,7 +1,7 @@
 class ComprasController < ApplicationController
   before_action :set_compra, only: [:show, :edit, :update, :destroy]
   def index
-    @produto = Produto.where('titulo LIKE ? AND visivel > 0', "%#{params[:tituloBusc]}%")
+    @produto = Produto.where('titulo LIKE ? AND visivel = 1', "%#{params[:tituloBusc]}%").order('created_at DESC')
   end
 
   def nova
@@ -12,7 +12,7 @@ class ComprasController < ApplicationController
     results = ActiveRecord::Base.connection.execute(sql)
     sql2 = "UPDATE produtos SET visivel = 0 WHERE id = #{params[:idproduto]}"
     results = ActiveRecord::Base.connection.execute(sql2)
-    render :new
+    redirect_to comprar_path
   end
 
   private

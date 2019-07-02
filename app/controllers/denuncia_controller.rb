@@ -4,7 +4,7 @@ class DenunciaController < ApplicationController
   # GET /denuncia
   # GET /denuncia.json
   def index
-    @denuncia = Denuncium.all
+
   end
 
   # GET /denuncia/1
@@ -14,7 +14,11 @@ class DenunciaController < ApplicationController
 
   # GET /denuncia/new
   def new
-    @denuncium = Denuncium.new
+    
+    @produtoimagem = Produtoimagem.where(:produto_id => params[:id]).take
+
+    @produto = Produto.where(:id => params[:id]).take
+    
   end
 
   # GET /denuncia/1/edit
@@ -24,31 +28,23 @@ class DenunciaController < ApplicationController
   # POST /denuncia
   # POST /denuncia.json
   def create
-    @denuncium = Denuncium.new(denuncium_params)
+    @den = Denuncium.new(denuncium_params)
+    @den.id_delator = cookies.signed[:user_id]
+    
+    if @den.save
+      flash.now[:notice] = "Anúncio criado com sucesso!"
+      redirect_to anuncios_path
 
-    respond_to do |format|
-      if @denuncium.save
-        format.html { redirect_to @denuncium, notice: 'Denuncium was successfully created.' }
-        format.json { render :show, status: :created, location: @denuncium }
-      else
-        format.html { render :new }
-        format.json { render json: @denuncium.errors, status: :unprocessable_entity }
-      end
+    else
+      flash.now[:notice] = "Ocorreu um problema, verifique os dados e tente novamente!"
+      redirect_to home_path
     end
   end
 
   # PATCH/PUT /denuncia/1
   # PATCH/PUT /denuncia/1.json
   def update
-    respond_to do |format|
-      if @denuncium.update(denuncium_params)
-        format.html { redirect_to @denuncium, notice: 'Denuncium was successfully updated.' }
-        format.json { render :show, status: :ok, location: @denuncium }
-      else
-        format.html { render :edit }
-        format.json { render json: @denuncium.errors, status: :unprocessable_entity }
-      end
-    end
+
   end
 
   # DELETE /denuncia/1
@@ -69,6 +65,6 @@ class DenunciaController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def denuncium_params
-      params.fetch(:denuncium, {})
+      params.require(:denuncia).permit(:idAnuncio, :desc)
     end
 end

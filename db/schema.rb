@@ -10,23 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190701102445) do
-
-  create_table "compras", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20190702091945) do
 
   create_table "denuncia", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "id_delator", null: false
     t.integer "idAnuncio", null: false
+    t.string "desc"
     t.index ["idAnuncio"], name: "idAnuncio_idx"
     t.index ["id_delator"], name: "id_delator_idx"
   end
 
-  create_table "enderecos", id: :integer, default: nil, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "enderecos", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "rua"
     t.string "numero"
     t.string "complemento"
@@ -78,7 +74,7 @@ ActiveRecord::Schema.define(version: 20190701102445) do
     t.datetime "updated_at", null: false
     t.string "password_digest"
     t.integer "user_level", null: false
-    t.integer "enderecoID", null: false
+    t.integer "enderecoID"
     t.index ["enderecoID"], name: "enderecoID_idx"
   end
 

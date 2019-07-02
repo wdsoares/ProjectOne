@@ -11,9 +11,9 @@
         <div class="panel-body">
           <%= bootstrap_form_for(:produto, :html => {:multipart => false}) do |f| %>
             <%= f.text_field :titulo, class: "input-lg", maxlength: "100", label: "Título", :required => true, :placeholder => "Sistemas Operacionais Modernos"%>
-            <%= f.text_field :autores, class: "input-lg", maxlength: "100", label:"Autores", :placeholder => "A. Tanenbaum" %>
+            <%= f.text_field :autores, class: "input-lg", maxlength: "100", label:"Autores", :placeholder => "A. Tanenbaum", :required => true %>
             <%= f.text_field :edicao, class: "input-lg", maxlength: "11", label:"Edição", :placeholder => "4ª" %>
-            <%= f.text_field :data_pub, id: "data_pub", class:"input-lg", maxlength: "10", label:"Data de publicação", :placeholder => "01/01/2001" %>
+            <%= f.text_field :data_pub, id: "data_pub", class:"input-lg", maxlength: "10", label:"Data de publicação", :placeholder => "01/01/2001", :required => true %>
             <%= f.text_field :isbn, label:"ISBN", maxlength: "13", minlength: "13", inline_errors: true , class: "input-lg", :placeholder => "1234567891234" %>
             <%= f.text_field :editora, maxlength: "40", label:"Editora", :placeholder => "Editora..."  %>
             <%= f.file_field :imagem, label: "Imagens", name: "produtoimagem[imagem][]", :multiple => false, accept: 'image/png,image/gif,image/jpeg', :required => true %>

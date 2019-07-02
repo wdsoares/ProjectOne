@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  resources :denuncia
-  resources :produtoimagems
+
   root "sessions#new"
   post "/" => "sessions#create"
   get "sessions" => "sessions#new"
@@ -22,5 +21,9 @@ Rails.application.routes.draw do
   get "busca" => "compras#index"
   put "comprar" => "compras#nova"
   get "detalhes" => "produtos#show"
+  get "denuncia" => "denuncia#new"
+  post "denuncia" => "denuncia#create"
+  post "cancelar" => "produtos#edit"
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

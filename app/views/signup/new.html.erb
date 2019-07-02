@@ -3,16 +3,16 @@
     <div class="col-sm-offset-6 col-sm-12 row align-items-center justify-content-center" style="margin-top: 20px">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h2 style="color:#ffffff; font-family: Harabara Mais, Helvetica, sans-serif;">Crie um novo usuário</h2>
+          <h2 style="font-family: Harabara Mais, Helvetica, sans-serif;">Crie um novo usuário</h2>
         </div>
         <div class="panel-body">
           <%= bootstrap_form_for(:user, label_col: "col-sm-12") do |f| %>
-            <%= f.text_field :nome,class: "input-lg", label_class:"white-text", label: "Nome",:required => true,placeholder: "João do Pulo" %>
-            <%= f.email_field :email, class: "input-lg", label_class:"white-text", :required => true, placeholder: "joao@email.com" %>
-            <%= f.text_field :zap, class: "input-lg", label_class:"white-text", placeholder: "(00) 99999-9999", id: "zap",:required => true %>
-            <%= f.password_field :password, label:"Senha", label_class:"white-text", minlength: "6", inline_errors: true ,class: "input-lg", placeholder:"Min. 6 caracteres", :required => true %>
-            <%= f.password_field :password_confirmation, label_class:"white-text", minlength: "6", label:"Confirme sua senha", placeholder: "******", class: "input-lg", :required => true %>
-            <%= f.submit "Criar", class: "btn btn-block btn-lg btn-danger2 active" %>
+            <%= f.text_field :nome,class: "input-lg", label: "Nome",:required => true,placeholder: "João do Pulo" %>
+            <%= f.email_field :email, class: "input-lg", :required => true, placeholder: "joao@email.com" %>
+            <%= f.text_field :zap, class: "input-lg", placeholder: "(00) 99999-9999", id: "zap",:required => true, label: "Telefone" %>
+            <%= f.password_field :password, label:"Senha", minlength: "6", inline_errors: true ,class: "input-lg", placeholder:"Min. 6 caracteres", :required => true %>
+            <%= f.password_field :password_confirmation, minlength: "6", label:"Confirme sua senha", placeholder: "******", class: "input-lg", :required => true %>
+            <%= f.submit "Criar", class: "btn btn-block btn-lg btn-danger-home active" %>
             <%= link_to "Voltar", sessions_path, class:"btn btn-block btn-sm btn-light" %><br>
             <p id="notice"><%= notice %></p>
           <% end %> 
@@ -20,4 +20,6 @@
       </div>
     </div>
   </div>
+<br>
 </div>
+<%= render 'footer/footer' %>
