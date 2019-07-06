@@ -52,3 +52,4 @@ production:
   database: ProjetoOne_production
   username: ProjetoOne
   password: <%= ENV['PROJETOONE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
